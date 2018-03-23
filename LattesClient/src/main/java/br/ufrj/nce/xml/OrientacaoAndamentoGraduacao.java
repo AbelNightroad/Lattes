@@ -3,18 +3,18 @@ package br.ufrj.nce.xml;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
-@XStreamAlias("ORIENTACAO-EM-ANDAMENTO-DE-MESTRADO")
-public class OrientacaoAndamentoMestrado {
+@XStreamAlias("ORIENTACAO-EM-ANDAMENTO-DE-GRADUACAO")
+public class OrientacaoAndamentoGraduacao {
 
 	@XStreamAlias("SEQUENCIA-PRODUCAO")
 	@XStreamAsAttribute
 	private String sequenciaProducao;
 	
-	@XStreamAlias("DADOS-BASICOS-DA-ORIENTACAO-EM-ANDAMENTO-DE-MESTRADO")
-	private DadosBasicosOrientacaoAndamentoMestrado dadosBasicosOrientacaoAndamentoMestrado;
+	@XStreamAlias("DADOS-BASICOS-DA-ORIENTACAO-EM-ANDAMENTO-DE-GRADUACAO")
+	private DadosBasicosOrientacaoAndamentoGraduacao dadosBasicosOrientacaoAndamentoGraduacao;
 	
-	@XStreamAlias("DETALHAMENTO-DA-ORIENTACAO-EM-ANDAMENTO-DE-MESTRADO")
-	private DetalhamentoOrientacaoAndamentoMestrado detalhamentoOrientacaoAndamentoMestrado;
+	@XStreamAlias("DETALHAMENTO-DA-ORIENTACAO-EM-ANDAMENTO-DE-GRADUACAO")
+	private DetalhamentoOrientacaoAndamentoGraduacao detalhamentoOrientacaoAndamentoGraduacao;
 	
 	@XStreamAlias("PALAVRAS-CHAVE")
 	private PalavrasChave palavrasChave;
@@ -36,22 +36,22 @@ public class OrientacaoAndamentoMestrado {
 		this.sequenciaProducao = sequenciaProducao;
 	}
 
-	public DadosBasicosOrientacaoAndamentoMestrado getDadosBasicosOrientacaoAndamentoMestrado() {
-		return dadosBasicosOrientacaoAndamentoMestrado;
+	public DadosBasicosOrientacaoAndamentoGraduacao getDadosBasicosOrientacaoAndamentoGraduacao() {
+		return dadosBasicosOrientacaoAndamentoGraduacao;
 	}
 
-	public void setDadosBasicosOrientacaoAndamentoMestrado(
-			DadosBasicosOrientacaoAndamentoMestrado dadosBasicosOrientacaoAndamentoMestrado) {
-		this.dadosBasicosOrientacaoAndamentoMestrado = dadosBasicosOrientacaoAndamentoMestrado;
+	public void setDadosBasicosOrientacaoAndamentoGraduacao(
+			DadosBasicosOrientacaoAndamentoGraduacao dadosBasicosOrientacaoAndamentoGraduacao) {
+		this.dadosBasicosOrientacaoAndamentoGraduacao = dadosBasicosOrientacaoAndamentoGraduacao;
 	}
 
-	public DetalhamentoOrientacaoAndamentoMestrado getDetalhamentoOrientacaoAndamentoMestrado() {
-		return detalhamentoOrientacaoAndamentoMestrado;
+	public DetalhamentoOrientacaoAndamentoGraduacao getDetalhamentoOrientacaoAndamentoGraduacao() {
+		return detalhamentoOrientacaoAndamentoGraduacao;
 	}
 
-	public void setDetalhamentoOrientacaoAndamentoMestrado(
-			DetalhamentoOrientacaoAndamentoMestrado detalhamentoOrientacaoAndamentoMestrado) {
-		this.detalhamentoOrientacaoAndamentoMestrado = detalhamentoOrientacaoAndamentoMestrado;
+	public void setDetalhamentoOrientacaoAndamentoGraduacao(
+			DetalhamentoOrientacaoAndamentoGraduacao detalhamentoOrientacaoAndamentoGraduacao) {
+		this.detalhamentoOrientacaoAndamentoGraduacao = detalhamentoOrientacaoAndamentoGraduacao;
 	}
 
 	public PalavrasChave getPalavrasChave() {

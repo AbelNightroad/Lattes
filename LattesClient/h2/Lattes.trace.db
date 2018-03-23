@@ -1,0 +1,1211 @@
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE BANCA-[*]JULGADORA-PARA-CONCURSO-PUBLICO IF EXISTS "; SQL statement:
+
+    drop table BANCA-JULGADORA-PARA-CONCURSO-PUBLICO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE BANCA-[*]JULGADORA-PARA-CONCURSO-PUBLICO_PARTICIPANTE-BANCA IF EXISTS "; SQL statement:
+
+    drop table BANCA-JULGADORA-PARA-CONCURSO-PUBLICO_PARTICIPANTE-BANCA if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DADOS-[*]BASICOS-DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO IF EXISTS "; SQL statement:
+
+    drop table DADOS-BASICOS-DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DADOS-[*]BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO IF EXISTS "; SQL statement:
+
+    drop table DADOS-BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DADOS-[*]BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO IF EXISTS "; SQL statement:
+
+    drop table DADOS-BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DADOS-[*]BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO IF EXISTS "; SQL statement:
+
+    drop table DADOS-BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DADOS-[*]BASICOS-DA-PARTICIPACAO-EM-SIMPOSIO IF EXISTS "; SQL statement:
+
+    drop table DADOS-BASICOS-DA-PARTICIPACAO-EM-SIMPOSIO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DADOS-[*]COMPLEMENTARES IF EXISTS "; SQL statement:
+
+    drop table DADOS-COMPLEMENTARES if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DETALHAMENTO-[*]DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO IF EXISTS "; SQL statement:
+
+    drop table DETALHAMENTO-DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DETALHAMENTO-[*]DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO IF EXISTS "; SQL statement:
+
+    drop table DETALHAMENTO-DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DETALHAMENTO-[*]DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO IF EXISTS "; SQL statement:
+
+    drop table DETALHAMENTO-DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DETALHAMENTO-[*]DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO IF EXISTS "; SQL statement:
+
+    drop table DETALHAMENTO-DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DETALHAMENTO-[*]DA-PARTICIPACAO-EM-SIMPOSIO IF EXISTS "; SQL statement:
+
+    drop table DETALHAMENTO-DA-PARTICIPACAO-EM-SIMPOSIO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE FORMACAO-[*]COMPLEMENTAR IF EXISTS "; SQL statement:
+
+    drop table FORMACAO-COMPLEMENTAR if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-DE-DOUTORADO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-DE-DOUTORADO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-DE-DOUTORADO_PARTICIPANTE-BANCA IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-DE-DOUTORADO_PARTICIPANTE-BANCA if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-DE-EXAME-QUALIFICACAO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-DE-EXAME-QUALIFICACAO_PARTICIPANTE-BANCA IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO_PARTICIPANTE-BANCA if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-DE-MESTRADO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-DE-MESTRADO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-DE-MESTRADO_PARTICIPANTE-BANCA IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-DE-MESTRADO_PARTICIPANTE-BANCA if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-JULGADORA IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-JULGADORA if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-JULGADORA_BANCA-JULGADORA-PARA-CONCURSO-PUBLICO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-JULGADORA_BANCA-JULGADORA-PARA-CONCURSO-PUBLICO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-TRABALHOS-CONCLUSAO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-DOUTORADO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-DOUTORADO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-MESTRADO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-MESTRADO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-EVENTOS-CONGRESSOS IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-EVENTOS-CONGRESSOS if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-EVENTOS-CONGRESSOS_PARTICIPACAO-EM-SIMPOSIO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-EVENTOS-CONGRESSOS_PARTICIPACAO-EM-SIMPOSIO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-SIMPOSIO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-SIMPOSIO if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPANTE-[*]BANCA IF EXISTS "; SQL statement:
+
+    drop table PARTICIPANTE-BANCA if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPANTE-[*]DE-EVENTOS-CONGRESSOS IF EXISTS "; SQL statement:
+
+    drop table PARTICIPANTE-DE-EVENTOS-CONGRESSOS if exists [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE BANCA-[*]JULGADORA-PARA-CONCURSO-PUBLICO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        AREASDOCONHECIMENTO__CODIGO BIGINT,
+        DADOSBASICOSDABANCAJULGADORAPARACONCURSOPUBLICO__CODIGO BIGINT,
+        DETALHAMENTODABANCAJULGADORAPARACONCURSOPUBLICO__CODIGO BIGINT,
+        INFORMACOESADICIONAIS_CODIGO BIGINT,
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table BANCA-JULGADORA-PARA-CONCURSO-PUBLICO (
+        _CODIGO bigint generated by default as identity,
+        areasDoConhecimento__CODIGO bigint,
+        dadosBasicosDaBancaJulgadoraParaConcursoPublico__CODIGO bigint,
+        detalhamentoDaBancaJulgadoraParaConcursoPublico__CODIGO bigint,
+        informacoesAdicionais_CODIGO bigint,
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE BANCA-[*]JULGADORA-PARA-CONCURSO-PUBLICO_PARTICIPANTE-BANCA (
+        BANCAJULGADORAPARACONCURSOPUBLICO__CODIGO BIGINT NOT NULL,
+        PARTICIPANTEBANCAS__CODIGO BIGINT NOT NULL
+    ) "; SQL statement:
+
+    create table BANCA-JULGADORA-PARA-CONCURSO-PUBLICO_PARTICIPANTE-BANCA (
+        BancaJulgadoraParaConcursoPublico__CODIGO bigint not null,
+        participanteBancas__CODIGO bigint not null
+    ) [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE DADOS-[*]BASICOS-DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        ANO VARCHAR(255),
+        DOI VARCHAR(255),
+        HOME_PAGE VARCHAR(255),
+        IDIOMA VARCHAR(255),
+        NATUREZA VARCHAR(255),
+        PAIS VARCHAR(255),
+        TITULO VARCHAR(255),
+        TITULO-INGLES VARCHAR(255),
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table DADOS-BASICOS-DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO (
+        _CODIGO bigint generated by default as identity,
+        ANO varchar(255),
+        DOI varchar(255),
+        HOME_PAGE varchar(255),
+        IDIOMA varchar(255),
+        NATUREZA varchar(255),
+        PAIS varchar(255),
+        TITULO varchar(255),
+        TITULO-INGLES varchar(255),
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE DADOS-[*]BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        ANO VARCHAR(255),
+        DOI VARCHAR(255),
+        HOME_PAGE VARCHAR(255),
+        IDIOMA VARCHAR(255),
+        NATUREZA VARCHAR(255),
+        PAIS VARCHAR(255),
+        TITULO VARCHAR(255),
+        TITULO-INGLES VARCHAR(255),
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table DADOS-BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO (
+        _CODIGO bigint generated by default as identity,
+        ANO varchar(255),
+        DOI varchar(255),
+        HOME_PAGE varchar(255),
+        IDIOMA varchar(255),
+        NATUREZA varchar(255),
+        PAIS varchar(255),
+        TITULO varchar(255),
+        TITULO-INGLES varchar(255),
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE DADOS-[*]BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        ANO VARCHAR(255),
+        DOI VARCHAR(255),
+        HOME-PAGE VARCHAR(255),
+        IDIOMA VARCHAR(255),
+        NATUREZA VARCHAR(255),
+        PAIS VARCHAR(255),
+        TITULO VARCHAR(255),
+        TITULO-INGLES VARCHAR(255),
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table DADOS-BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO (
+        _CODIGO bigint generated by default as identity,
+        ANO varchar(255),
+        DOI varchar(255),
+        HOME-PAGE varchar(255),
+        IDIOMA varchar(255),
+        NATUREZA varchar(255),
+        PAIS varchar(255),
+        TITULO varchar(255),
+        TITULO-INGLES varchar(255),
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE DADOS-[*]BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        ANO VARCHAR(255),
+        DOI VARCHAR(255),
+        HOME-PAGE VARCHAR(255),
+        IDIOMA VARCHAR(255),
+        NATUREZA VARCHAR(255),
+        PAIS VARCHAR(255),
+        TIPO VARCHAR(255),
+        TITULO VARCHAR(255),
+        TITULO-INGLES VARCHAR(255),
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table DADOS-BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO (
+        _CODIGO bigint generated by default as identity,
+        ANO varchar(255),
+        DOI varchar(255),
+        HOME-PAGE varchar(255),
+        IDIOMA varchar(255),
+        NATUREZA varchar(255),
+        PAIS varchar(255),
+        TIPO varchar(255),
+        TITULO varchar(255),
+        TITULO-INGLES varchar(255),
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE DADOS-[*]BASICOS-DA-PARTICIPACAO-EM-SIMPOSIO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        ANO VARCHAR(255),
+        DOI VARCHAR(255),
+        FLAG-DIVULGACAO-CIENTIFICA VARCHAR(255),
+        FLAG-RELEVANCIA VARCHAR(255),
+        FORMA-PARTICIPACAO VARCHAR(255),
+        HOME-PAGE-DO-TRABALHO VARCHAR(255),
+        IDIOMA VARCHAR(255),
+        MEIO-DE-DIVULGACAO VARCHAR(255),
+        NATUREZA VARCHAR(255),
+        PAIS VARCHAR(255),
+        TIPO-PARTICIPACAO VARCHAR(255),
+        TITULO VARCHAR(255),
+        TITULO-INGLES VARCHAR(255),
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table DADOS-BASICOS-DA-PARTICIPACAO-EM-SIMPOSIO (
+        _CODIGO bigint generated by default as identity,
+        ANO varchar(255),
+        DOI varchar(255),
+        FLAG-DIVULGACAO-CIENTIFICA varchar(255),
+        FLAG-RELEVANCIA varchar(255),
+        FORMA-PARTICIPACAO varchar(255),
+        HOME-PAGE-DO-TRABALHO varchar(255),
+        IDIOMA varchar(255),
+        MEIO-DE-DIVULGACAO varchar(255),
+        NATUREZA varchar(255),
+        PAIS varchar(255),
+        TIPO-PARTICIPACAO varchar(255),
+        TITULO varchar(255),
+        TITULO-INGLES varchar(255),
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE DADOS-[*]COMPLEMENTARES (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        FORMACAOCOMPLEMENTAR__CODIGO BIGINT,
+        PARTICIPACAOEMBANCATRABALHOSCONCLUSAO__CODIGO BIGINT,
+        PARTICIPACAOEMBANCAOJULGADORA__CODIGO BIGINT,
+        PARTICIPACAOEMEVENTOSCONGRESSOS__CODIGO BIGINT,
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table DADOS-COMPLEMENTARES (
+        _CODIGO bigint generated by default as identity,
+        formacaoComplementar__CODIGO bigint,
+        participacaoEmBancaTrabalhosConclusao__CODIGO bigint,
+        participacaoEmBancaoJulgadora__CODIGO bigint,
+        participacaoEmEventosCongressos__CODIGO bigint,
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE DETALHAMENTO-[*]DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        CODIGO-INSTITUICAO VARCHAR(255),
+        NOME-INSTITUICAO VARCHAR(255),
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table DETALHAMENTO-DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO (
+        _CODIGO bigint generated by default as identity,
+        CODIGO-INSTITUICAO varchar(255),
+        NOME-INSTITUICAO varchar(255),
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE DETALHAMENTO-[*]DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        CODIGO-CURSO VARCHAR(255),
+        CODIGO-INSTITUICAO VARCHAR(255),
+        NOME-CURSO VARCHAR(255),
+        NOME-CURSO-INGLES VARCHAR(255),
+        NOME-DO-CANDIDATO VARCHAR(255),
+        NOME-INSTITUICAO VARCHAR(255),
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table DETALHAMENTO-DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO (
+        _CODIGO bigint generated by default as identity,
+        CODIGO-CURSO varchar(255),
+        CODIGO-INSTITUICAO varchar(255),
+        NOME-CURSO varchar(255),
+        NOME-CURSO-INGLES varchar(255),
+        NOME-DO-CANDIDATO varchar(255),
+        NOME-INSTITUICAO varchar(255),
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE DETALHAMENTO-[*]DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        CODIGO-CURSO VARCHAR(255),
+        CODIGO-INSTITUICAO VARCHAR(255),
+        NOME-CURSO VARCHAR(255),
+        NOME-CURSO-INGLES VARCHAR(255),
+        NOME-DO-CANDIDATO VARCHAR(255),
+        NOME-INSTITUICAO VARCHAR(255),
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table DETALHAMENTO-DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO (
+        _CODIGO bigint generated by default as identity,
+        CODIGO-CURSO varchar(255),
+        CODIGO-INSTITUICAO varchar(255),
+        NOME-CURSO varchar(255),
+        NOME-CURSO-INGLES varchar(255),
+        NOME-DO-CANDIDATO varchar(255),
+        NOME-INSTITUICAO varchar(255),
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE DETALHAMENTO-[*]DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        CODIGO-CURSO VARCHAR(255),
+        CODIGO-INSTITUICAO VARCHAR(255),
+        NOME-CURSO VARCHAR(255),
+        NOME-CURSO-INGLES VARCHAR(255),
+        NOME-DO-CANDIDATO VARCHAR(255),
+        NOME-INSTITUICAO VARCHAR(255),
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table DETALHAMENTO-DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO (
+        _CODIGO bigint generated by default as identity,
+        CODIGO-CURSO varchar(255),
+        CODIGO-INSTITUICAO varchar(255),
+        NOME-CURSO varchar(255),
+        NOME-CURSO-INGLES varchar(255),
+        NOME-DO-CANDIDATO varchar(255),
+        NOME-INSTITUICAO varchar(255),
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE DETALHAMENTO-[*]DA-PARTICIPACAO-EM-SIMPOSIO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        CIDADE-DO-EVENTO VARCHAR(255),
+        LOCAL-DO-EVENTO VARCHAR(255),
+        NOME-DO-EVENTO VARCHAR(255),
+        NOME-DO-EVENTO-INGLES VARCHAR(255),
+        NOME-INSTITUICAO VARCHAR(255),
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table DETALHAMENTO-DA-PARTICIPACAO-EM-SIMPOSIO (
+        _CODIGO bigint generated by default as identity,
+        CIDADE-DO-EVENTO varchar(255),
+        LOCAL-DO-EVENTO varchar(255),
+        NOME-DO-EVENTO varchar(255),
+        NOME-DO-EVENTO-INGLES varchar(255),
+        NOME-INSTITUICAO varchar(255),
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE FORMACAO-[*]COMPLEMENTAR (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table FORMACAO-COMPLEMENTAR (
+        _CODIGO bigint generated by default as identity,
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-BANCA-DE-DOUTORADO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        SEQUENCIA-PRODUCAO VARCHAR(255),
+        AREASDOCONHECIMENTO__CODIGO BIGINT,
+        DADOSBASICOSDAPARTICIPACAOEMBANCADEDOUTORADO__CODIGO BIGINT,
+        DETALHAMENTODAPARTICIPACAOEMBANCADEDOUTORADO__CODIGO BIGINT,
+        INFORMACOESADICIONAIS_CODIGO BIGINT,
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-BANCA-DE-DOUTORADO (
+        _CODIGO bigint generated by default as identity,
+        SEQUENCIA-PRODUCAO varchar(255),
+        areasDoConhecimento__CODIGO bigint,
+        dadosBasicosDaParticipacaoEmBancaDeDoutorado__CODIGO bigint,
+        detalhamentoDaParticipacaoEmBancaDeDoutorado__CODIGO bigint,
+        informacoesAdicionais_CODIGO bigint,
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-BANCA-DE-DOUTORADO_PARTICIPANTE-BANCA (
+        PARTICIPACAOEMBANCADEDOUTORADO__CODIGO BIGINT NOT NULL,
+        PARTICIPANTESBANCA__CODIGO BIGINT NOT NULL
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-BANCA-DE-DOUTORADO_PARTICIPANTE-BANCA (
+        ParticipacaoEmBancaDeDoutorado__CODIGO bigint not null,
+        participantesBanca__CODIGO bigint not null
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-BANCA-DE-EXAME-QUALIFICACAO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        SEQUENCIA-PRODUCAO VARCHAR(255),
+        AREASDOCONHECIMENTO__CODIGO BIGINT,
+        DADOSBASICOSDAPARTICIPACAOEMBANCADEEXAMEQUALIFICACAO__CODIGO BIGINT,
+        DETALHAMENTODAPARTICIPACAOEMBANCADEEXAMEQUALIFICACAO__CODIGO BIGINT,
+        INFORMACOESADICIONAIS_CODIGO BIGINT,
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO (
+        _CODIGO bigint generated by default as identity,
+        SEQUENCIA-PRODUCAO varchar(255),
+        areasDoConhecimento__CODIGO bigint,
+        dadosBasicosDaParticipacaoEmBancaDeExameQualificacao__CODIGO bigint,
+        detalhamentoDaParticipacaoEmBancaDeExameQualificacao__CODIGO bigint,
+        informacoesAdicionais_CODIGO bigint,
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-BANCA-DE-EXAME-QUALIFICACAO_PARTICIPANTE-BANCA (
+        PARTICIPACAOEMBANCADEEXAMEQUALIFICACAO__CODIGO BIGINT NOT NULL,
+        PARTICIPANTESBANCA__CODIGO BIGINT NOT NULL
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO_PARTICIPANTE-BANCA (
+        ParticipacaoEmBancaDeExameQualificacao__CODIGO bigint not null,
+        participantesBanca__CODIGO bigint not null
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-BANCA-DE-MESTRADO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        SEQUENCIA-PRODUCAO VARCHAR(255),
+        AREASDOCONHECIMENTO__CODIGO BIGINT,
+        DADOSBASICOSDAPARTICIPACAOEMBANCADEMESTRADO__CODIGO BIGINT,
+        DETALHAMENTODAPARTICIPACAOEMBANCADEMESTRADO__CODIGO BIGINT,
+        INFORMACOESADICIONAIS_CODIGO BIGINT,
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-BANCA-DE-MESTRADO (
+        _CODIGO bigint generated by default as identity,
+        SEQUENCIA-PRODUCAO varchar(255),
+        areasDoConhecimento__CODIGO bigint,
+        dadosBasicosDaParticipacaoEmBancaDeMestrado__CODIGO bigint,
+        detalhamentoDaParticipacaoEmBancaDeMestrado__CODIGO bigint,
+        informacoesAdicionais_CODIGO bigint,
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-BANCA-DE-MESTRADO_PARTICIPANTE-BANCA (
+        PARTICIPACAOEMBANCADEMESTRADO__CODIGO BIGINT NOT NULL,
+        PARTICIPANTESBANCA__CODIGO BIGINT NOT NULL
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-BANCA-DE-MESTRADO_PARTICIPANTE-BANCA (
+        ParticipacaoEmBancaDeMestrado__CODIGO bigint not null,
+        participantesBanca__CODIGO bigint not null
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-BANCA-JULGADORA (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-BANCA-JULGADORA (
+        _CODIGO bigint generated by default as identity,
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-BANCA-JULGADORA_BANCA-JULGADORA-PARA-CONCURSO-PUBLICO (
+        PARTICIPACAOEMBANCAJULGADORA__CODIGO BIGINT NOT NULL,
+        BANCABANCAJULGADORAPARACONCURSOPUBLICOS__CODIGO BIGINT NOT NULL
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-BANCA-JULGADORA_BANCA-JULGADORA-PARA-CONCURSO-PUBLICO (
+        ParticipacaoEmBancaJulgadora__CODIGO bigint not null,
+        bancaBancaJulgadoraParaConcursoPublicos__CODIGO bigint not null
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-BANCA-TRABALHOS-CONCLUSAO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO (
+        _CODIGO bigint generated by default as identity,
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-DOUTORADO (
+        PARTICIPACAOEMBANCATRABALHOSCONCLUSAO__CODIGO BIGINT NOT NULL,
+        PARTICIPACAOEMBANCADEDOUTORADOS__CODIGO BIGINT NOT NULL
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-DOUTORADO (
+        ParticipacaoEmBancaTrabalhosConclusao__CODIGO bigint not null,
+        participacaoEmBancaDeDoutorados__CODIGO bigint not null
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO (
+        PARTICIPACAOEMBANCATRABALHOSCONCLUSAO__CODIGO BIGINT NOT NULL,
+        PARTICIPACAOEMBANCADEEXAMEQUALIFICACAOS__CODIGO BIGINT NOT NULL
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO (
+        ParticipacaoEmBancaTrabalhosConclusao__CODIGO bigint not null,
+        participacaoEmBancaDeExameQualificacaos__CODIGO bigint not null
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-MESTRADO (
+        PARTICIPACAOEMBANCATRABALHOSCONCLUSAO__CODIGO BIGINT NOT NULL,
+        PARTICIPACAOEMBANCADEMESTRADOS__CODIGO BIGINT NOT NULL
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-MESTRADO (
+        ParticipacaoEmBancaTrabalhosConclusao__CODIGO bigint not null,
+        participacaoEmBancaDeMestrados__CODIGO bigint not null
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-EVENTOS-CONGRESSOS (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-EVENTOS-CONGRESSOS (
+        _CODIGO bigint generated by default as identity,
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-EVENTOS-CONGRESSOS_PARTICIPACAO-EM-SIMPOSIO (
+        PARTICIPACAOEMEVENTOSCONGRESSOS__CODIGO BIGINT NOT NULL,
+        PARTICIPACAOEMSIMPOSIO__CODIGO BIGINT NOT NULL
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-EVENTOS-CONGRESSOS_PARTICIPACAO-EM-SIMPOSIO (
+        ParticipacaoEmEventosCongressos__CODIGO bigint not null,
+        participacaoEmSimposio__CODIGO bigint not null
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPACAO-[*]EM-SIMPOSIO (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        SEQUENCIA-PRODUCAO VARCHAR(255),
+        AREASDOCONHECIMENTO__CODIGO BIGINT,
+        DADOSBASICOSDAPARTICIPACAOEMSIMPOSIO__CODIGO BIGINT,
+        DETALHAMENTODAPARTICIPACAOEMSIMPOSIO__CODIGO BIGINT,
+        INFORMACOESADICIONAIS_CODIGO BIGINT,
+        PARTICIPANTEDEEVENTOSCONGRESSOS__CODIGO BIGINT,
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table PARTICIPACAO-EM-SIMPOSIO (
+        _CODIGO bigint generated by default as identity,
+        SEQUENCIA-PRODUCAO varchar(255),
+        areasDoConhecimento__CODIGO bigint,
+        dadosBasicosDaParticipacaoEmSimposio__CODIGO bigint,
+        detalhamentoDaParticipacaoEmSimposio__CODIGO bigint,
+        informacoesAdicionais_CODIGO bigint,
+        participanteDeEventosCongressos__CODIGO bigint,
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPANTE-[*]BANCA (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        NOME-COMPLETO-DO-PARTICIPANTE-DA-BANCA VARCHAR(255),
+        NOME-PARA-CITACAO-DO-PARTICIPANTE-DA-BANCA VARCHAR(255),
+        NRO-ID-CNPQ VARCHAR(255),
+        ORDEM-PARTICIPANTE VARCHAR(255),
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table PARTICIPANTE-BANCA (
+        _CODIGO bigint generated by default as identity,
+        NOME-COMPLETO-DO-PARTICIPANTE-DA-BANCA varchar(255),
+        NOME-PARA-CITACAO-DO-PARTICIPANTE-DA-BANCA varchar(255),
+        NRO-ID-CNPQ varchar(255),
+        ORDEM-PARTICIPANTE varchar(255),
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE PARTICIPANTE-[*]DE-EVENTOS-CONGRESSOS (
+        _CODIGO BIGINT GENERATED BY DEFAULT AS IDENTITY,
+        NOME-COMPLETO-DO-PARTICIPANTE-DE-EVENTOS-CONGRESSOS VARCHAR(255),
+        NOME-PARA-CITACAO-DO-PARTICIPANTE-DE-EVENTOS-CONGRESSOS VARCHAR(255),
+        ORDEM-PARTICIPANTE VARCHAR(255),
+        PRIMARY KEY (_CODIGO)
+    ) "; SQL statement:
+
+    create table PARTICIPANTE-DE-EVENTOS-CONGRESSOS (
+        _CODIGO bigint generated by default as identity,
+        NOME-COMPLETO-DO-PARTICIPANTE-DE-EVENTOS-CONGRESSOS varchar(255),
+        NOME-PARA-CITACAO-DO-PARTICIPANTE-DE-EVENTOS-CONGRESSOS varchar(255),
+        ORDEM-PARTICIPANTE varchar(255),
+        primary key (_CODIGO)
+    ) [42000-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BANCA" not found; SQL statement:
+
+    alter table BANCA-JULGADORA-PARA-CONCURSO-PUBLICO_PARTICIPANTE-BANCA 
+        add constraint UK_c3kp6om0hy1ddecor7m1c3nsy unique (participanteBancas__CODIGO) [42102-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-DOUTORADO_PARTICIPANTE-BANCA 
+        add constraint UK_nuj21a3cqnlyp3p5nsf20md8x unique (participantesBanca__CODIGO) [42102-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO_PARTICIPANTE-BANCA 
+        add constraint UK_q1nrvdwpexb818y8yihgeduj4 unique (participantesBanca__CODIGO) [42102-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-MESTRADO_PARTICIPANTE-BANCA 
+        add constraint UK_3p612f99iilu045xq6roka8qt unique (participantesBanca__CODIGO) [42102-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-JULGADORA_BANCA-JULGADORA-PARA-CONCURSO-PUBLICO 
+        add constraint UK_4f9gq474jn4pepi1h4fnyfi4l unique (bancaBancaJulgadoraParaConcursoPublicos__CODIGO) [42102-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-DOUTORADO 
+        add constraint UK_9rqcdm7urtdwf53e5nqiajj1h unique (participacaoEmBancaDeDoutorados__CODIGO) [42102-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO 
+        add constraint UK_p8as34scaklqsh07i0fsbim1m unique (participacaoEmBancaDeExameQualificacaos__CODIGO) [42102-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-MESTRADO 
+        add constraint UK_ofelm82s0i9qpyuaeoy85wksx unique (participacaoEmBancaDeMestrados__CODIGO) [42102-191]
+2016-05-04 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-EVENTOS-CONGRESSOS_PARTICIPACAO-EM-SIMPOSIO 
+        add constraint UK_jq5waxtl3mv0ecx4othcdlvh1 unique (participacaoEmSimposio__CODIGO) [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BANCA" not found; SQL statement:
+
+    alter table BANCA-JULGADORA-PARA-CONCURSO-PUBLICO 
+        add constraint FKebwplo7ya3amtjb2npcpk9uae 
+        foreign key (areasDoConhecimento__CODIGO) 
+        references AREAS_DO_CONHECIMENTO [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BANCA" not found; SQL statement:
+
+    alter table BANCA-JULGADORA-PARA-CONCURSO-PUBLICO 
+        add constraint FK6nrb5titn82houbgrbe4x8ucg 
+        foreign key (dadosBasicosDaBancaJulgadoraParaConcursoPublico__CODIGO) 
+        references DADOS-BASICOS-DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BANCA" not found; SQL statement:
+
+    alter table BANCA-JULGADORA-PARA-CONCURSO-PUBLICO 
+        add constraint FKgl6sxwby8heyybbu7eyj05pty 
+        foreign key (detalhamentoDaBancaJulgadoraParaConcursoPublico__CODIGO) 
+        references DETALHAMENTO-DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BANCA" not found; SQL statement:
+
+    alter table BANCA-JULGADORA-PARA-CONCURSO-PUBLICO 
+        add constraint FKb740m49weeao92ifsw908m67b 
+        foreign key (informacoesAdicionais_CODIGO) 
+        references INFORMACOES_ADICIONAIS [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BANCA" not found; SQL statement:
+
+    alter table BANCA-JULGADORA-PARA-CONCURSO-PUBLICO_PARTICIPANTE-BANCA 
+        add constraint FK8itigktdytxrykl0bmg5holqw 
+        foreign key (participanteBancas__CODIGO) 
+        references PARTICIPANTE-BANCA [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BANCA" not found; SQL statement:
+
+    alter table BANCA-JULGADORA-PARA-CONCURSO-PUBLICO_PARTICIPANTE-BANCA 
+        add constraint FKjtwf1fjkqeowq3nh2wsot2xog 
+        foreign key (BancaJulgadoraParaConcursoPublico__CODIGO) 
+        references BANCA-JULGADORA-PARA-CONCURSO-PUBLICO [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DADOS" not found; SQL statement:
+
+    alter table DADOS-COMPLEMENTARES 
+        add constraint FKj2nugnj8i6fbr65l6gp3lis6e 
+        foreign key (formacaoComplementar__CODIGO) 
+        references FORMACAO-COMPLEMENTAR [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DADOS" not found; SQL statement:
+
+    alter table DADOS-COMPLEMENTARES 
+        add constraint FK70hv2vr4ykdxwt2cj2sv9nmfj 
+        foreign key (participacaoEmBancaTrabalhosConclusao__CODIGO) 
+        references PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DADOS" not found; SQL statement:
+
+    alter table DADOS-COMPLEMENTARES 
+        add constraint FKro5unkdn4plljy9yfg0gxxff2 
+        foreign key (participacaoEmBancaoJulgadora__CODIGO) 
+        references PARTICIPACAO-EM-BANCA-JULGADORA [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DADOS" not found; SQL statement:
+
+    alter table DADOS-COMPLEMENTARES 
+        add constraint FKgg4mkyr2csnlpojjwsdtnn6e3 
+        foreign key (participacaoEmEventosCongressos__CODIGO) 
+        references PARTICIPACAO-EM-EVENTOS-CONGRESSOS [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-DOUTORADO 
+        add constraint FKhuli14jjoofgdy15w19qycc8p 
+        foreign key (areasDoConhecimento__CODIGO) 
+        references AREAS_DO_CONHECIMENTO [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-DOUTORADO 
+        add constraint FK5ncdovglxjdpwef853544jx6i 
+        foreign key (dadosBasicosDaParticipacaoEmBancaDeDoutorado__CODIGO) 
+        references DADOS-BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-DOUTORADO 
+        add constraint FKr9wteq9aiqoetfb5sx6jcsdxv 
+        foreign key (detalhamentoDaParticipacaoEmBancaDeDoutorado__CODIGO) 
+        references DETALHAMENTO-DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-DOUTORADO 
+        add constraint FKkhsa0htxj8wxd4k0grv0l9pcg 
+        foreign key (informacoesAdicionais_CODIGO) 
+        references INFORMACOES_ADICIONAIS [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-DOUTORADO_PARTICIPANTE-BANCA 
+        add constraint FKd6vva09qc5vggdplkahxqemui 
+        foreign key (participantesBanca__CODIGO) 
+        references PARTICIPANTE-BANCA [42102-191]
+2016-05-04 15:31:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-DOUTORADO_PARTICIPANTE-BANCA 
+        add constraint FKmb5ih2edglki31d4xayjowi3e 
+        foreign key (ParticipacaoEmBancaDeDoutorado__CODIGO) 
+        references PARTICIPACAO-EM-BANCA-DE-DOUTORADO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO 
+        add constraint FKscoclxcp3mrlw9lg1e53nd0cn 
+        foreign key (areasDoConhecimento__CODIGO) 
+        references AREAS_DO_CONHECIMENTO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO 
+        add constraint FK92g490gv5ge8fof6jgr77g0ye 
+        foreign key (dadosBasicosDaParticipacaoEmBancaDeExameQualificacao__CODIGO) 
+        references DADOS-BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO 
+        add constraint FK8ksteyn5k7poai07r49fcm2ju 
+        foreign key (detalhamentoDaParticipacaoEmBancaDeExameQualificacao__CODIGO) 
+        references DETALHAMENTO-DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO 
+        add constraint FKtfvr42oj99skdb2kygl56g63f 
+        foreign key (informacoesAdicionais_CODIGO) 
+        references INFORMACOES_ADICIONAIS [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO_PARTICIPANTE-BANCA 
+        add constraint FKmmec5va3fr3s0plnpdx61011o 
+        foreign key (participantesBanca__CODIGO) 
+        references PARTICIPANTE-BANCA [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO_PARTICIPANTE-BANCA 
+        add constraint FKdr6pa1ernvbqkw8n272xw6f4h 
+        foreign key (ParticipacaoEmBancaDeExameQualificacao__CODIGO) 
+        references PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-MESTRADO 
+        add constraint FKnor85x2upo9j9u0phdys1m6q8 
+        foreign key (areasDoConhecimento__CODIGO) 
+        references AREAS_DO_CONHECIMENTO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-MESTRADO 
+        add constraint FKqmsbl7494jdaagwt8d1y5qemp 
+        foreign key (dadosBasicosDaParticipacaoEmBancaDeMestrado__CODIGO) 
+        references DADOS-BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-MESTRADO 
+        add constraint FKoahvpxpyt4sq9fuk2jbmnitwt 
+        foreign key (detalhamentoDaParticipacaoEmBancaDeMestrado__CODIGO) 
+        references DETALHAMENTO-DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-MESTRADO 
+        add constraint FKcv9k9re0b4u9k4ckwu2c4a6m3 
+        foreign key (informacoesAdicionais_CODIGO) 
+        references INFORMACOES_ADICIONAIS [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-MESTRADO_PARTICIPANTE-BANCA 
+        add constraint FKeutxsu6erxwtrtkmhlc3wj7xu 
+        foreign key (participantesBanca__CODIGO) 
+        references PARTICIPANTE-BANCA [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-DE-MESTRADO_PARTICIPANTE-BANCA 
+        add constraint FKns3e1brymm3koy6l0w710slil 
+        foreign key (ParticipacaoEmBancaDeMestrado__CODIGO) 
+        references PARTICIPACAO-EM-BANCA-DE-MESTRADO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-JULGADORA_BANCA-JULGADORA-PARA-CONCURSO-PUBLICO 
+        add constraint FKsp0een4vqd4o7mof8rcb5u4m8 
+        foreign key (bancaBancaJulgadoraParaConcursoPublicos__CODIGO) 
+        references BANCA-JULGADORA-PARA-CONCURSO-PUBLICO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-JULGADORA_BANCA-JULGADORA-PARA-CONCURSO-PUBLICO 
+        add constraint FK7q9bqn5rujwkg0hbd72a2qffr 
+        foreign key (ParticipacaoEmBancaJulgadora__CODIGO) 
+        references PARTICIPACAO-EM-BANCA-JULGADORA [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-DOUTORADO 
+        add constraint FKcm9hgubuwuqadic9siy03b42f 
+        foreign key (participacaoEmBancaDeDoutorados__CODIGO) 
+        references PARTICIPACAO-EM-BANCA-DE-DOUTORADO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-DOUTORADO 
+        add constraint FKp1hexie3n2q5lhufuowmc15si 
+        foreign key (ParticipacaoEmBancaTrabalhosConclusao__CODIGO) 
+        references PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO 
+        add constraint FK7g5m39ity0rcewhs74cr4mbxw 
+        foreign key (participacaoEmBancaDeExameQualificacaos__CODIGO) 
+        references PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO 
+        add constraint FKfxpxm2ulcmpitg3pdcrf3ctjk 
+        foreign key (ParticipacaoEmBancaTrabalhosConclusao__CODIGO) 
+        references PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-MESTRADO 
+        add constraint FK59eo7xidvgqjkaftfed65mspu 
+        foreign key (participacaoEmBancaDeMestrados__CODIGO) 
+        references PARTICIPACAO-EM-BANCA-DE-MESTRADO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-MESTRADO 
+        add constraint FK2fq38usplqhr8kyihxe2iq8tb 
+        foreign key (ParticipacaoEmBancaTrabalhosConclusao__CODIGO) 
+        references PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-EVENTOS-CONGRESSOS_PARTICIPACAO-EM-SIMPOSIO 
+        add constraint FKqqmuvrp67f7spk17g9fu42j97 
+        foreign key (participacaoEmSimposio__CODIGO) 
+        references PARTICIPACAO-EM-SIMPOSIO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-EVENTOS-CONGRESSOS_PARTICIPACAO-EM-SIMPOSIO 
+        add constraint FKeibavafoe6bywtpjwoko6p6qy 
+        foreign key (ParticipacaoEmEventosCongressos__CODIGO) 
+        references PARTICIPACAO-EM-EVENTOS-CONGRESSOS [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-SIMPOSIO 
+        add constraint FKnob4yjngypmwqvgv8ebywt4r3 
+        foreign key (areasDoConhecimento__CODIGO) 
+        references AREAS_DO_CONHECIMENTO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-SIMPOSIO 
+        add constraint FKiu05c0l64xjqk20xmx7omdhux 
+        foreign key (dadosBasicosDaParticipacaoEmSimposio__CODIGO) 
+        references DADOS-BASICOS-DA-PARTICIPACAO-EM-SIMPOSIO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-SIMPOSIO 
+        add constraint FKd6wwk0309q6ixq7qto3ek7aak 
+        foreign key (detalhamentoDaParticipacaoEmSimposio__CODIGO) 
+        references DETALHAMENTO-DA-PARTICIPACAO-EM-SIMPOSIO [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-SIMPOSIO 
+        add constraint FKdqvwroh1qk3hgsskr658j2sq6 
+        foreign key (informacoesAdicionais_CODIGO) 
+        references INFORMACOES_ADICIONAIS [42102-191]
+2016-05-04 15:31:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTICIPACAO" not found; SQL statement:
+
+    alter table PARTICIPACAO-EM-SIMPOSIO 
+        add constraint FKhr5gbbpqw166f8vbyfc59denh 
+        foreign key (participanteDeEventosCongressos__CODIGO) 
+        references PARTICIPANTE-DE-EVENTOS-CONGRESSOS [42102-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE BANCA-[*]JULGADORA-PARA-CONCURSO-PUBLICO IF EXISTS "; SQL statement:
+
+    drop table BANCA-JULGADORA-PARA-CONCURSO-PUBLICO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE BANCA-[*]JULGADORA-PARA-CONCURSO-PUBLICO_PARTICIPANTE-BANCA IF EXISTS "; SQL statement:
+
+    drop table BANCA-JULGADORA-PARA-CONCURSO-PUBLICO_PARTICIPANTE-BANCA if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DADOS-[*]BASICOS-DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO IF EXISTS "; SQL statement:
+
+    drop table DADOS-BASICOS-DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DADOS-[*]BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO IF EXISTS "; SQL statement:
+
+    drop table DADOS-BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DADOS-[*]BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO IF EXISTS "; SQL statement:
+
+    drop table DADOS-BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DADOS-[*]BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO IF EXISTS "; SQL statement:
+
+    drop table DADOS-BASICOS-DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DADOS-[*]BASICOS-DA-PARTICIPACAO-EM-SIMPOSIO IF EXISTS "; SQL statement:
+
+    drop table DADOS-BASICOS-DA-PARTICIPACAO-EM-SIMPOSIO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DADOS-[*]COMPLEMENTARES IF EXISTS "; SQL statement:
+
+    drop table DADOS-COMPLEMENTARES if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DETALHAMENTO-[*]DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO IF EXISTS "; SQL statement:
+
+    drop table DETALHAMENTO-DA-BANCA-JULGADORA-PARA-CONCURSO-PUBLICO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DETALHAMENTO-[*]DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO IF EXISTS "; SQL statement:
+
+    drop table DETALHAMENTO-DA-PARTICIPACAO-EM-BANCA-DE-DOUTORADO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DETALHAMENTO-[*]DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO IF EXISTS "; SQL statement:
+
+    drop table DETALHAMENTO-DA-PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DETALHAMENTO-[*]DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO IF EXISTS "; SQL statement:
+
+    drop table DETALHAMENTO-DA-PARTICIPACAO-EM-BANCA-DE-MESTRADO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE DETALHAMENTO-[*]DA-PARTICIPACAO-EM-SIMPOSIO IF EXISTS "; SQL statement:
+
+    drop table DETALHAMENTO-DA-PARTICIPACAO-EM-SIMPOSIO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE FORMACAO-[*]COMPLEMENTAR IF EXISTS "; SQL statement:
+
+    drop table FORMACAO-COMPLEMENTAR if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-DE-DOUTORADO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-DE-DOUTORADO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-DE-DOUTORADO_PARTICIPANTE-BANCA IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-DE-DOUTORADO_PARTICIPANTE-BANCA if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-DE-EXAME-QUALIFICACAO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-DE-EXAME-QUALIFICACAO_PARTICIPANTE-BANCA IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO_PARTICIPANTE-BANCA if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-DE-MESTRADO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-DE-MESTRADO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-DE-MESTRADO_PARTICIPANTE-BANCA IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-DE-MESTRADO_PARTICIPANTE-BANCA if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-JULGADORA IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-JULGADORA if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-JULGADORA_BANCA-JULGADORA-PARA-CONCURSO-PUBLICO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-JULGADORA_BANCA-JULGADORA-PARA-CONCURSO-PUBLICO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-TRABALHOS-CONCLUSAO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-DOUTORADO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-DOUTORADO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANcA-DE-EXAME-QUALIFICACAO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-MESTRADO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO_PARTICIPACAO-EM-BANCA-DE-MESTRADO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-EVENTOS-CONGRESSOS IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-EVENTOS-CONGRESSOS if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-EVENTOS-CONGRESSOS_PARTICIPACAO-EM-SIMPOSIO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-EVENTOS-CONGRESSOS_PARTICIPACAO-EM-SIMPOSIO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPACAO-[*]EM-SIMPOSIO IF EXISTS "; SQL statement:
+
+    drop table PARTICIPACAO-EM-SIMPOSIO if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPANTE-[*]BANCA IF EXISTS "; SQL statement:
+
+    drop table PARTICIPANTE-BANCA if exists [42000-191]
+2016-05-04 15:31:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    DROP TABLE PARTICIPANTE-[*]DE-EVENTOS-CONGRESSOS IF EXISTS "; SQL statement:
+
+    drop table PARTICIPANTE-DE-EVENTOS-CONGRESSOS if exists [42000-191]

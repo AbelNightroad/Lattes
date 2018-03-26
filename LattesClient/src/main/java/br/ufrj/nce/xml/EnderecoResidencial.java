@@ -5,6 +5,7 @@ import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
 @XStreamAlias("ENDERECO-RESIDENCIAL")
 public class EnderecoResidencial {
+	
 	@XStreamAlias("LOGRADOURO")
 	@XStreamAsAttribute
 	private String logradouro;

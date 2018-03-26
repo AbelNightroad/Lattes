@@ -23,7 +23,7 @@ public class Curriculo {
 	
 	@XStreamAlias("DATA-ATUALIZACAO")
 	@XStreamAsAttribute
-	private LocalDate dataAtualizacao;
+	private String dataAtualizacao;
 	
 	@XStreamAlias("FORMATO-HORA-ATUALIZACAO")
 	@XStreamAsAttribute
@@ -31,7 +31,7 @@ public class Curriculo {
 
 	@XStreamAlias("HORA-ATUALIZACAO")
 	@XStreamAsAttribute
-	private LocalTime horaAtualizacao;
+	private String horaAtualizacao;
 
 	@XStreamAlias("DADOS-GERAIS")
 	private DadosGerais dadosGerais;
@@ -72,11 +72,11 @@ public class Curriculo {
 		this.formatoData = formatoData;
 	}
 
-	public LocalDate getDataAtualizacao() {
+	public String getDataAtualizacao() {
 		return dataAtualizacao;
 	}
 
-	public void setDataAtualizacao(LocalDate dataAtualizacao) {
+	public void setDataAtualizacao(String dataAtualizacao) {
 		this.dataAtualizacao = dataAtualizacao;
 	}
 
@@ -88,11 +88,11 @@ public class Curriculo {
 		this.formatoHora = formatoHora;
 	}
 
-	public LocalTime getHoraAtualizacao() {
+	public String getHoraAtualizacao() {
 		return horaAtualizacao;
 	}
 
-	public void setHoraAtualizacao(LocalTime horaAtualizacao) {
+	public void setHoraAtualizacao(String horaAtualizacao) {
 		this.horaAtualizacao = horaAtualizacao;
 	}
 

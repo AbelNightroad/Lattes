@@ -47,7 +47,7 @@ public class DadosGerais {
 	
 	@XStreamAlias("DATA-NASCIMENTO")
 	@XStreamAsAttribute
-	private LocalDate dataNascimento;
+	private String dataNascimento;
 	
 	@XStreamAlias("SEXO")
 	@XStreamAsAttribute
@@ -71,7 +71,7 @@ public class DadosGerais {
 	
 	@XStreamAlias("DATA-DE-EMISSAO")
 	@XStreamAsAttribute
-	private LocalDate dataEmissao;
+	private String dataEmissao;
 	
 	@XStreamAlias("NOME-DO-PAI")
 	@XStreamAsAttribute
@@ -209,11 +209,11 @@ public class DadosGerais {
 		this.formatoData = formatoData;
 	}
 
-	public LocalDate getDataNascimento() {
+	public String getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public void setDataNascimento(LocalDate dataNascimento) {
+	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 
@@ -257,11 +257,11 @@ public class DadosGerais {
 		this.formatoDataEmissao = formatoDataEmissao;
 	}
 
-	public LocalDate getDataEmissao() {
+	public String getDataEmissao() {
 		return dataEmissao;
 	}
 
-	public void setDataEmissao(LocalDate dataEmissao) {
+	public void setDataEmissao(String dataEmissao) {
 		this.dataEmissao = dataEmissao;
 	}
 

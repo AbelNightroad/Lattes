@@ -3,8 +3,8 @@ package br.ufrj.nce.xml;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
-@XStreamAlias("DADOS-BASICOS-DA-ORIENTACAO-EM-ANDAMENTO-DE-INICIACAO-CIENTIFICA")
-public class DadosBasicosOrientacaoAndamentoIniciacaoCientifica {
+@XStreamAlias("DADOS-BASICOS-DE-OUTRAS-ORIENTACOES-EM-ANDAMENTO")
+public class DadosBasicosOutrasOrientacoesAndamento {
 
 	@XStreamAlias("NATUREZA")
 	@XStreamAsAttribute
@@ -21,6 +21,10 @@ public class DadosBasicosOrientacaoAndamentoIniciacaoCientifica {
 	@XStreamAlias("PAIS")
 	@XStreamAsAttribute
 	private String pais;
+	
+	@XStreamAlias("IDIOMA")
+	@XStreamAsAttribute
+	private String idioma;
 	
 	@XStreamAlias("HOME-PAGE")
 	@XStreamAsAttribute
@@ -64,6 +68,14 @@ public class DadosBasicosOrientacaoAndamentoIniciacaoCientifica {
 
 	public void setPais(String pais) {
 		this.pais = pais;
+	}
+
+	public String getIdioma() {
+		return idioma;
+	}
+
+	public void setIdioma(String idioma) {
+		this.idioma = idioma;
 	}
 
 	public String getHomePage() {

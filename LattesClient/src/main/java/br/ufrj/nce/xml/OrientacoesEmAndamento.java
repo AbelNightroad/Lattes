@@ -28,4 +28,62 @@ public class OrientacoesEmAndamento {
 	
 	@XStreamImplicit(itemFieldName = "OUTRAS-ORIENTACOES-EM-ANDAMENTO")
 	private List<OutrasOrientacoesAndamento> outrasOrientacoesAndamento;
+
+	public List<OrientacaoAndamentoMestrado> getOrientacaoAndamentoMestrado() {
+		return orientacaoAndamentoMestrado;
+	}
+
+	public void setOrientacaoAndamentoMestrado(List<OrientacaoAndamentoMestrado> orientacaoAndamentoMestrado) {
+		this.orientacaoAndamentoMestrado = orientacaoAndamentoMestrado;
+	}
+
+	public List<OrientacaoAndamentoDoutorado> getOrientacaoAndamentoDoutorado() {
+		return orientacaoAndamentoDoutorado;
+	}
+
+	public void setOrientacaoAndamentoDoutorado(List<OrientacaoAndamentoDoutorado> orientacaoAndamentoDoutorado) {
+		this.orientacaoAndamentoDoutorado = orientacaoAndamentoDoutorado;
+	}
+
+	public List<OrientacaoAndamentoPosDoutorado> getOrientacaoAndamentoPosDoutorado() {
+		return orientacaoAndamentoPosDoutorado;
+	}
+
+	public void setOrientacaoAndamentoPosDoutorado(List<OrientacaoAndamentoPosDoutorado> orientacaoAndamentoPosDoutorado) {
+		this.orientacaoAndamentoPosDoutorado = orientacaoAndamentoPosDoutorado;
+	}
+
+	public List<OrientacaoAndamentoAperfeicoamentoEspecializacao> getOrientacaoAndamentoAperfeicoamentoEspecializacao() {
+		return orientacaoAndamentoAperfeicoamentoEspecializacao;
+	}
+
+	public void setOrientacaoAndamentoAperfeicoamentoEspecializacao(
+			List<OrientacaoAndamentoAperfeicoamentoEspecializacao> orientacaoAndamentoAperfeicoamentoEspecializacao) {
+		this.orientacaoAndamentoAperfeicoamentoEspecializacao = orientacaoAndamentoAperfeicoamentoEspecializacao;
+	}
+
+	public List<OrientacaoAndamentoGraduacao> getOrientacaoAndamentoGraduacao() {
+		return orientacaoAndamentoGraduacao;
+	}
+
+	public void setOrientacaoAndamentoGraduacao(List<OrientacaoAndamentoGraduacao> orientacaoAndamentoGraduacao) {
+		this.orientacaoAndamentoGraduacao = orientacaoAndamentoGraduacao;
+	}
+
+	public List<OrientacaoAndamentoIniciacaoCientifica> getOrientacaoAndamentoIniciacaoCientifica() {
+		return orientacaoAndamentoIniciacaoCientifica;
+	}
+
+	public void setOrientacaoAndamentoIniciacaoCientifica(
+			List<OrientacaoAndamentoIniciacaoCientifica> orientacaoAndamentoIniciacaoCientifica) {
+		this.orientacaoAndamentoIniciacaoCientifica = orientacaoAndamentoIniciacaoCientifica;
+	}
+
+	public List<OutrasOrientacoesAndamento> getOutrasOrientacoesAndamento() {
+		return outrasOrientacoesAndamento;
+	}
+
+	public void setOutrasOrientacoesAndamento(List<OutrasOrientacoesAndamento> outrasOrientacoesAndamento) {
+		this.outrasOrientacoesAndamento = outrasOrientacoesAndamento;
+	}
 }

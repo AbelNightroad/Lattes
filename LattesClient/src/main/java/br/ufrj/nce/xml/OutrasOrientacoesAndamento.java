@@ -3,19 +3,19 @@ package br.ufrj.nce.xml;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
-@XStreamAlias("ORIENTACAO-EM-ANDAMENTO-DE-INICIACAO-CIENTIFICA")
-public class OrientacaoAndamentoIniciacaoCientifica {
+@XStreamAlias("OUTRAS-ORIENTACOES-EM-ANDAMENTO")
+public class OutrasOrientacoesAndamento {
 
 	@XStreamAlias("SEQUENCIA-PRODUCAO")
 	@XStreamAsAttribute
 	private String sequenciaProducao;
 	
-	@XStreamAlias("DADOS-BASICOS-DA-ORIENTACAO-EM-ANDAMENTO-DE-INICIACAO-CIENTIFICA")
-	private DadosBasicosOrientacaoAndamentoIniciacaoCientifica dadosBasicosOrientacaoAndamentoIniciacaoCientifica;
+	@XStreamAlias("DADOS-BASICOS-DE-OUTRAS-ORIENTACOES-EM-ANDAMENTO")
+	private DadosBasicosOutrasOrientacoesAndamento dadosBasicosOutrasOrientacoesAndamento;
 	
-	@XStreamAlias("DETALHAMENTO-DA-ORIENTACAO-EM-ANDAMENTO-DE-INICIACAO-CIENTIFICA")
-	private DetalhamentoOrientacaoAndamentoIniciacaoCientifica detalhamentoOrientacaoAndamentoIniciacaoCientifica;
-	
+	@XStreamAlias("DETALHAMENTO-DE-OUTRAS-ORIENTACOES-EM-ANDAMENTO")
+	private DetalhamentoOutrasOrientacoesAndamento detalhamentoOutrasOrientacoesAndamento;
+		
 	@XStreamAlias("PALAVRAS-CHAVE")
 	private PalavrasChave palavrasChave;
 	
@@ -36,22 +36,22 @@ public class OrientacaoAndamentoIniciacaoCientifica {
 		this.sequenciaProducao = sequenciaProducao;
 	}
 
-	public DadosBasicosOrientacaoAndamentoIniciacaoCientifica getDadosBasicosOrientacaoAndamentoIniciacaoCientifica() {
-		return dadosBasicosOrientacaoAndamentoIniciacaoCientifica;
+	public DadosBasicosOutrasOrientacoesAndamento getDadosBasicosOutrasOrientacoesAndamento() {
+		return dadosBasicosOutrasOrientacoesAndamento;
 	}
 
-	public void setDadosBasicosOrientacaoAndamentoIniciacaoCientifica(
-			DadosBasicosOrientacaoAndamentoIniciacaoCientifica dadosBasicosOrientacaoAndamentoIniciacaoCientifica) {
-		this.dadosBasicosOrientacaoAndamentoIniciacaoCientifica = dadosBasicosOrientacaoAndamentoIniciacaoCientifica;
+	public void setDadosBasicosOutrasOrientacoesAndamento(
+			DadosBasicosOutrasOrientacoesAndamento dadosBasicosOutrasOrientacoesAndamento) {
+		this.dadosBasicosOutrasOrientacoesAndamento = dadosBasicosOutrasOrientacoesAndamento;
 	}
 
-	public DetalhamentoOrientacaoAndamentoIniciacaoCientifica getDetalhamentoOrientacaoAndamentoIniciacaoCientifica() {
-		return detalhamentoOrientacaoAndamentoIniciacaoCientifica;
+	public DetalhamentoOutrasOrientacoesAndamento getDetalhamentoOutrasOrientacoesAndamento() {
+		return detalhamentoOutrasOrientacoesAndamento;
 	}
 
-	public void setDetalhamentoOrientacaoAndamentoIniciacaoCientifica(
-			DetalhamentoOrientacaoAndamentoIniciacaoCientifica detalhamentoOrientacaoAndamentoIniciacaoCientifica) {
-		this.detalhamentoOrientacaoAndamentoIniciacaoCientifica = detalhamentoOrientacaoAndamentoIniciacaoCientifica;
+	public void setDetalhamentoOutrasOrientacoesAndamento(
+			DetalhamentoOutrasOrientacoesAndamento detalhamentoOutrasOrientacoesAndamento) {
+		this.detalhamentoOutrasOrientacoesAndamento = detalhamentoOutrasOrientacoesAndamento;
 	}
 
 	public PalavrasChave getPalavrasChave() {

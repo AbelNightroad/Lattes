@@ -28,4 +28,61 @@ public class DadosComplementares {
 	
 	@XStreamAlias("INFORMACOES-ADICIONAIS-CURSOS")
 	private InformacoesAdicionaisCursos informacoesAdicionaisCursos;
+
+	public List<FormacaoComplementar> getFormacaoComplementar() {
+		return formacaoComplementar;
+	}
+
+	public void setFormacaoComplementar(List<FormacaoComplementar> formacaoComplementar) {
+		this.formacaoComplementar = formacaoComplementar;
+	}
+
+	public ParticipacaoEmBancaTrabalhosConclusao getParticipacaoEmBancaTrabalhosConclusao() {
+		return participacaoEmBancaTrabalhosConclusao;
+	}
+
+	public void setParticipacaoEmBancaTrabalhosConclusao(
+			ParticipacaoEmBancaTrabalhosConclusao participacaoEmBancaTrabalhosConclusao) {
+		this.participacaoEmBancaTrabalhosConclusao = participacaoEmBancaTrabalhosConclusao;
+	}
+
+	public ParticipacaoEmBancaJulgadora getParticipacaoEmBancaoJulgadora() {
+		return participacaoEmBancaoJulgadora;
+	}
+
+	public void setParticipacaoEmBancaoJulgadora(ParticipacaoEmBancaJulgadora participacaoEmBancaoJulgadora) {
+		this.participacaoEmBancaoJulgadora = participacaoEmBancaoJulgadora;
+	}
+
+	public ParticipacaoEmEventosCongressos getParticipacaoEmEventosCongressos() {
+		return participacaoEmEventosCongressos;
+	}
+
+	public void setParticipacaoEmEventosCongressos(ParticipacaoEmEventosCongressos participacaoEmEventosCongressos) {
+		this.participacaoEmEventosCongressos = participacaoEmEventosCongressos;
+	}
+
+	public OrientacoesEmAndamento getOrientacoesEmAndamento() {
+		return orientacoesEmAndamento;
+	}
+
+	public void setOrientacoesEmAndamento(OrientacoesEmAndamento orientacoesEmAndamento) {
+		this.orientacoesEmAndamento = orientacoesEmAndamento;
+	}
+
+	public InformacoesAdicionaisInstituicoes getInformacoesAdicionaisInstituicoes() {
+		return informacoesAdicionaisInstituicoes;
+	}
+
+	public void setInformacoesAdicionaisInstituicoes(InformacoesAdicionaisInstituicoes informacoesAdicionaisInstituicoes) {
+		this.informacoesAdicionaisInstituicoes = informacoesAdicionaisInstituicoes;
+	}
+
+	public InformacoesAdicionaisCursos getInformacoesAdicionaisCursos() {
+		return informacoesAdicionaisCursos;
+	}
+
+	public void setInformacoesAdicionaisCursos(InformacoesAdicionaisCursos informacoesAdicionaisCursos) {
+		this.informacoesAdicionaisCursos = informacoesAdicionaisCursos;
+	}
 }

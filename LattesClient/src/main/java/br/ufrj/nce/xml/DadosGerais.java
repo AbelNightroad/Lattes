@@ -1,11 +1,13 @@
 package br.ufrj.nce.xml;
 
-import java.time.LocalDate;
 import java.util.List;
+
+import org.mongodb.morphia.annotations.Embedded;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Embedded
 @XStreamAlias("DADOS-GERAIS")
 public class DadosGerais {
 
@@ -113,27 +115,35 @@ public class DadosGerais {
 	@XStreamAsAttribute
 	private String racaOuCor;
 	
+	@Embedded
 	@XStreamAlias("RESUMO-CV")
 	private ResumoCV resumoCV;
 
+	@Embedded
 	@XStreamAlias("OUTRAS-INFORMACOES-RELEVANTES")
 	private OutrasInformacoesRelevantes outrasInfoRelevantes;
 
+	@Embedded
 	@XStreamAlias("ENDERECO")
 	private Endereco endereco;
 
+	@Embedded
 	@XStreamAlias("FORMACAO-ACADEMICA-TITULACAO")
 	private FormacaoAcademicaTitulacao formacaoAcademicaTitulacao;
 
+	@Embedded
 	@XStreamAlias("ATUACOES-PROFISSIONAIS")
 	private List<AtuacaoProfissional> atuacoesProfissionais;
 
+	@Embedded
 	@XStreamAlias("AREAS-DE-ATUACAO")
 	private List<AreaDeAtuacao> areasDeAtuacao;
 
+	@Embedded
 	@XStreamAlias("IDIOMAS")
 	private List<Idioma> idiomas;
 
+	@Embedded
 	@XStreamAlias("PREMIOS-TITULOS")
 	private List<PremioTitulo> premiosTitulos;
 

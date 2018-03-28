@@ -1,11 +1,12 @@
 package br.ufrj.nce.xml;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
+import org.mongodb.morphia.annotations.Embedded;
+import org.mongodb.morphia.annotations.Entity;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Entity(noClassnameStored = true, value = "curriculos")
 @XStreamAlias("CURRICULO-VITAE")
 public class Curriculo {
 
@@ -33,18 +34,23 @@ public class Curriculo {
 	@XStreamAsAttribute
 	private String horaAtualizacao;
 
+	@Embedded
 	@XStreamAlias("DADOS-GERAIS")
 	private DadosGerais dadosGerais;
 
+	@Embedded
 	@XStreamAlias("PRODUCAO-BIBLIOGRAFICA")
 	private ProducaoBibliografica producaoBibliografica;
 
+	@Embedded
 	@XStreamAlias("PRODUCAO-TECNICA")
 	private ProducaoTecnica producaoTecnica;
 
+	@Embedded
 	@XStreamAlias("OUTRA-PRODUCAO")
 	private OutraProducao outraProducao;
 
+	@Embedded
 	@XStreamAlias("DADOS-COMPLEMENTARES")
 	private DadosComplementares dadosComplementares;
 

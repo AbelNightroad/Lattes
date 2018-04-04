@@ -1,7 +1,11 @@
 package br.ufrj.nce.xml;
 
+import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.Embedded;
 import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Id;
+import org.mongodb.morphia.annotations.IndexOptions;
+import org.mongodb.morphia.annotations.Indexed;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
@@ -9,11 +13,15 @@ import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 @Entity(noClassnameStored = true, value = "curriculos")
 @XStreamAlias("CURRICULO-VITAE")
 public class Curriculo {
+	
+	@Id
+	private ObjectId id;
 
 	@XStreamAlias("SISTEMA-ORIGEM-XML")
 	@XStreamAsAttribute
 	private String origemXml;
 
+	@Indexed(options = @IndexOptions(unique = true))
 	@XStreamAlias("NUMERO-IDENTIFICADOR")
 	@XStreamAsAttribute
 	private String numeroIdentificador;

@@ -2,42 +2,56 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Embedded
 @XStreamAlias("PRODUCAO-TECNICA")
 public class ProducaoTecnica {
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "CULTIVAR-REGISTRADA")
 	private List<CultivarRegistrada> cultivarRegistradas;
 
+	@Embedded
 	@XStreamImplicit(itemFieldName = "SOFTWARE")
 	private List<Software> softwares;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "PATENTE")
 	private List<Patente> patentes;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "CULTIVAR-PROTEGIDA")
 	private List<CultivarProtegida> cultivarProtegidas;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "DESENHO-INDUSTRIAL")
 	private List<DesenhoIndustrial> desenhosIndustriais;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "MARCA")
 	private List<Marca> marcas;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "TOPOGRAFIA-DE-CIRCUITO-INTEGRADO")
 	private List<TopografiaCircuitoIntegrado> topografiasCircuitoIntegrado;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "PRODUTO-TECNOLOGICO")
 	private List<ProdutoTecnologico> produtosTecnologicos;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "PROCESSOS-OU-TECNICAS")
 	private List<ProcessosOuTecnicas> processosOuTecnicas;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "TRABALHO-TECNICO")
 	private List<TrabalhoTecnico> trabalhosTecnicos;
 	
+	@Embedded
 	@XStreamAlias("DEMAIS-TIPOS-DE-PRODUCAO-TECNICA")
 	private DemaisTiposDeProducaoTecnica demaisTiposDeProducaoTecnica;
 

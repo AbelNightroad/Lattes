@@ -1,14 +1,17 @@
 package br.ufrj.nce.xml;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Embedded
 @XStreamAlias("DADOS-BASICOS-DA-CULTIVAR")
 public class DadosBasicosCultivar {
 
 	@XStreamAlias("DENOMINACAO")
 	@XStreamAsAttribute
-	private String denomminacao;
+	private String denominacao;
 	
 	@XStreamAlias("ANO-SOLICITACAO")
 	@XStreamAsAttribute
@@ -31,11 +34,11 @@ public class DadosBasicosCultivar {
 	private String flagPotencialInovacao;
 
 	public String getDenomminacao() {
-		return denomminacao;
+		return denominacao;
 	}
 
-	public void setDenomminacao(String denomminacao) {
-		this.denomminacao = denomminacao;
+	public void setDenomminacao(String denominacao) {
+		this.denominacao = denominacao;
 	}
 
 	public String getAnoSolicitacao() {

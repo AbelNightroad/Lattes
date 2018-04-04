@@ -2,18 +2,24 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Embedded
 @XStreamAlias("OUTRA-PRODUCAO")
 public class OutraProducao {
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "PRODUCAO-ARTISTICA-CULTURAL")
 	private List<ProducaoArtisticaCultural> producaoArtisticaCultural;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ORIENTACOES-CONCLUIDAS")
 	private List<OrientacoesConcluidas> orientacoesConcluidas;
 
+	@Embedded
 	@XStreamImplicit(itemFieldName = "DEMAIS-TRABALHOS")
 	private List<DemaisTrabalhos> demaisTrabalhos;
 

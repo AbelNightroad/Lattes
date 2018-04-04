@@ -2,35 +2,45 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@XStreamAlias("CAPITULO-DE-LIVRO-PUBLICADO")
+@Embedded
+@XStreamAlias("CAPITULOS-DE-LIVROS-PUBLICADOS")
 public class CapituloDeLivroPublicado {
 
 	@XStreamAlias("SEQUENCIA-PRODUCAO")
 	@XStreamAsAttribute
 	private String sequenciaProducao;
 
+	@Embedded
 	@XStreamAlias("DADOS-BASICOS-DO-CAPITULO")
 	private DadosBasicosDoCapitulo dadosBasicosDoCapitulo;
 
+	@Embedded
 	@XStreamAlias("DETALHAMENTO-DO-CAPITULO")
 	private DetalhamentoDoCapitulo detalhamentoDoCapitulo;
 
+	@Embedded
 	@XStreamImplicit(itemFieldName = "AUTORES")
 	private List<Autor> autores;
 
+	@Embedded
 	@XStreamAlias("PALAVRAS-CHAVE")
 	private PalavrasChave palavrasChave;
 
+	@Embedded
 	@XStreamAlias("AREAS-DO-CONHECIMENTO")
 	private AreasDoConhecimento areasDoConhecimento;
 	
+	@Embedded
 	@XStreamAlias("SETORES-DE-ATIVIDADE")
 	private SetoresDeAtividade setoresDeAtividade;
 
+	@Embedded
 	@XStreamAlias("INFORMACOES-ADICIONAIS")
 	private InformacoesAdicionais informacoesAdicionais;
 

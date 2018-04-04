@@ -1,30 +1,39 @@
 package br.ufrj.nce.xml;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Embedded
 @XStreamAlias("ORIENTACOES-CONCLUIDAS-PARA-POS-DOUTORADO")
 public class OrientacaoConcluidaParaPosDoutorado {
 
 	@XStreamAlias("SEQUENCIA-PRODUCAO")
 	@XStreamAsAttribute
 	private String sequenciaProducao;
-	
+
+	@Embedded
 	@XStreamAlias("DADOS-BASICOS-DE-ORIENTACOES-CONCLUIDAS-PARA-POS-DOUTORADO")
 	private DadosBasicosOrientacaoConcluidaParaPosDoutorado dadosBasicosOrientacaoConcluidaParaPosDoutorado;
 	
+	@Embedded
 	@XStreamAlias("DETALHAMENTO-DE-ORIENTACOES-CONCLUIDAS-PARA-POS-DOUTORADO")
 	private DetalhamentoOrientacaoConcluidaParaPosDoutorado detalhamentoOrientacaoConcluidaParaPosDoutorado;
 	
+	@Embedded
 	@XStreamAlias("PALAVRAS-CHAVE")
 	private PalavrasChave palavrasChave;
 	
+	@Embedded
 	@XStreamAlias("AREAS-DO-CONHECIMENTO")
 	private AreasDoConhecimento areasDoConhecimento;
 	
+	@Embedded
 	@XStreamAlias("SETORES-DE-ATIVIDADE")
 	private SetoresDeAtividade setoresDeAtividade;
 	
+	@Embedded
 	@XStreamAlias("INFORMACOES-ADICIONAIS")
 	private InformacoesAdicionais informacoesAdicionais;
 

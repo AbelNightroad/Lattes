@@ -1,8 +1,11 @@
 package br.ufrj.nce.xml;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Embedded
 @XStreamAlias("MBA")
 public class MBA {
 
@@ -81,18 +84,6 @@ public class MBA {
 	@XStreamAlias("NOME-CURSO-INGLES")
 	@XStreamAsAttribute
 	private String nomeCursoIngles;
-	
-	@XStreamAlias("PALAVRAS-CHAVE")
-	@XStreamAsAttribute
-	private PalavrasChave palavrasChave;
-	
-	@XStreamAlias("AREAS-DO-CONHECIMENTO")
-	@XStreamAsAttribute
-	private AreasDoConhecimento areasDoConhecimento;
-	
-	@XStreamAlias("SETORES-DE-ATIVIDADE")
-	@XStreamAsAttribute
-	private SetoresDeAtividade setoresDeAtividade;
 
 	public String getSequenciaFormacao() {
 		return sequenciaFormacao;
@@ -244,30 +235,6 @@ public class MBA {
 
 	public void setNomeCursoIngles(String nomeCursoIngles) {
 		this.nomeCursoIngles = nomeCursoIngles;
-	}
-
-	public PalavrasChave getPalavrasChave() {
-		return palavrasChave;
-	}
-
-	public void setPalavrasChave(PalavrasChave palavrasChave) {
-		this.palavrasChave = palavrasChave;
-	}
-
-	public AreasDoConhecimento getAreasDoConhecimento() {
-		return areasDoConhecimento;
-	}
-
-	public void setAreasDoConhecimento(AreasDoConhecimento areasDoConhecimento) {
-		this.areasDoConhecimento = areasDoConhecimento;
-	}
-
-	public SetoresDeAtividade getSetoresDeAtividade() {
-		return setoresDeAtividade;
-	}
-
-	public void setSetoresDeAtividade(SetoresDeAtividade setoresDeAtividade) {
-		this.setoresDeAtividade = setoresDeAtividade;
 	}
 }
 

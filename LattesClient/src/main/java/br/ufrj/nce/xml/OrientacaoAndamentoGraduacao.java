@@ -1,8 +1,11 @@
 package br.ufrj.nce.xml;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Embedded
 @XStreamAlias("ORIENTACAO-EM-ANDAMENTO-DE-GRADUACAO")
 public class OrientacaoAndamentoGraduacao {
 
@@ -10,21 +13,27 @@ public class OrientacaoAndamentoGraduacao {
 	@XStreamAsAttribute
 	private String sequenciaProducao;
 	
+	@Embedded
 	@XStreamAlias("DADOS-BASICOS-DA-ORIENTACAO-EM-ANDAMENTO-DE-GRADUACAO")
 	private DadosBasicosOrientacaoAndamentoGraduacao dadosBasicosOrientacaoAndamentoGraduacao;
 	
+	@Embedded
 	@XStreamAlias("DETALHAMENTO-DA-ORIENTACAO-EM-ANDAMENTO-DE-GRADUACAO")
 	private DetalhamentoOrientacaoAndamentoGraduacao detalhamentoOrientacaoAndamentoGraduacao;
 	
+	@Embedded
 	@XStreamAlias("PALAVRAS-CHAVE")
 	private PalavrasChave palavrasChave;
 	
+	@Embedded
 	@XStreamAlias("AREAS-DO-CONHECIMENTO")
 	private AreasDoConhecimento areasDoConhecimento;
 	
+	@Embedded
 	@XStreamAlias("SETORES-DE-ATIVIDADE")
 	private SetoresDeAtividade setoresDeAtividade;
 	
+	@Embedded
 	@XStreamAlias("INFORMACOES-ADICIONAIS")
 	private InformacoesAdicionais informacoesAdicionais;
 

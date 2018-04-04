@@ -2,30 +2,40 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Embedded
 @XStreamAlias("DADOS-COMPLEMENTARES")
 public class DadosComplementares {
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "FORMACAO-COMPLEMENTAR")
 	private List<FormacaoComplementar> formacaoComplementar;
 
+	@Embedded
 	@XStreamAlias("PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO")
 	private ParticipacaoEmBancaTrabalhosConclusao participacaoEmBancaTrabalhosConclusao;
 
+	@Embedded
 	@XStreamAlias("PARTICIPACAO-EM-BANCA-JULGADORA")
 	private ParticipacaoEmBancaJulgadora participacaoEmBancaoJulgadora;
 
+	@Embedded
 	@XStreamAlias("PARTICIPACAO-EM-EVENTOS-CONGRESSOS")
 	private ParticipacaoEmEventosCongressos participacaoEmEventosCongressos;
 	
+	@Embedded
 	@XStreamAlias("ORIENTACOES-EM-ANDAMENTO")
 	private OrientacoesEmAndamento orientacoesEmAndamento;
 	
+	@Embedded
 	@XStreamAlias("INFORMACOES-ADICIONAIS-INSTITUICOES")
 	private InformacoesAdicionaisInstituicoes informacoesAdicionaisInstituicoes;
 	
+	@Embedded
 	@XStreamAlias("INFORMACOES-ADICIONAIS-CURSOS")
 	private InformacoesAdicionaisCursos informacoesAdicionaisCursos;
 

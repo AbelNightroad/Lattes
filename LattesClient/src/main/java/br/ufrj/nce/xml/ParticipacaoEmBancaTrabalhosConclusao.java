@@ -2,27 +2,36 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Embedded
 @XStreamAlias("PARTICIPACAO-EM-BANCA-TRABALHOS-CONCLUSAO")
 public class ParticipacaoEmBancaTrabalhosConclusao {
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-BANCA-DE-MESTRADO")
 	private List<ParticipacaoEmBancaDeMestrado> participacaoEmBancaDeMestrados;
 
+	@Embedded
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-BANCA-DE-DOUTORADO")
 	private List<ParticipacaoEmBancaDeDoutorado> participacaoEmBancaDeDoutorados;
 
+	@Embedded
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-BANCA-DE-EXAME-QUALIFICACAO")
 	private List<ParticipacaoEmBancaDeExameQualificacao> participacaoEmBancaDeExameQualificacaos;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-BANCA-DE-APERFEICOAMENTO-ESPECIALIZACAO")
 	private List<ParticipacaoBancaAperfeicoamentoEspecializacao> participacaoBancaAperfeicoamentoEspecializacao;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-BANCA-DE-GRADUACAO")
 	private List<ParticipacaoBancaGraduacao> participacaoBancaGraduacao;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "OUTRAS-PARTICIPACOES-EM-BANCA")
 	private List<OutrasParticipacoesBanca> outrasParticipacoesBanca;
 

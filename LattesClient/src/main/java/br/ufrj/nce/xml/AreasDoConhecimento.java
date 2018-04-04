@@ -1,7 +1,10 @@
 package br.ufrj.nce.xml;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
+@Embedded
 @XStreamAlias("AREAS-DO-CONHECIMENTO")
 public class AreasDoConhecimento {
 

@@ -1,8 +1,11 @@
 package br.ufrj.nce.xml;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Embedded
 @XStreamAlias("DADOS-BASICOS-DA-TOPOGRAFIA-DE-CIRCUITO-INTEGRADO")
 public class DadosBasicosTopografiaCircuitoIntegrado {
 

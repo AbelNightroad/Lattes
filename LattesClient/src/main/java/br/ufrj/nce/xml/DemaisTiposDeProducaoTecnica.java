@@ -2,45 +2,60 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Embedded
 @XStreamAlias("DEMAIS-TIPOS-DE-PRODUCAO-TECNICA")
 public class DemaisTiposDeProducaoTecnica {
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "APRESENTACAO-DE-TRABALHO")
 	private List<ApresentacaoTrabalho> apresentacaoTrabalho;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "CARTA-MAPA-OU-SIMILAR")
 	private List<CartaMapaSimilar> cartaMapaSimilar;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "CURSO-DE-CURTA-DURACAO-MINISTRADO")
 	private List<CursoCurtaDuracaoMinistrado> cursoCurtaDuracaoMinistrado;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "DESENVOLVIMENTO-DE-MATERIAL-DIDATICO-OU-INSTRUCIONAL")
 	private List<DesenvolvimentoDeMaterialDidaticoOuIntrucional> desenvolvimentoDeMateriaisDidaticoOuIntrucional;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "EDITORACAO")
 	private List<Editoracao> editoracao;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "MANUTENCAO-DE-OBRA-ARTISTICA")
 	private List<ManutencaoObraArtistica> manutencaoObraArtistica;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "MAQUETE")
 	private List<Maquete> maquete;
 
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ORGANIZACAO-DE-EVENTO")
 	private List<OrganizacaoDeEvento> organizacaoDeEventos;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "PROGRAMA-DE-RADIO-TV")
 	private List<ProgramaRadioTv> programaRadioTv;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "RELATORIO-DE-PESQUISA")
 	private List<RelatorioPesquisa> relatorioPesquisa;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "MIDIA-SOCIAL-WEBSITE-BLOG")
 	private List<MidiaSocialWebsiteBlog> MidiSocialWebsiteBlog;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "OUTRA-PRODUCAO-TECNICA")
 	private List<OutraProducaoTecnica> outraProducaoTecnica;
 

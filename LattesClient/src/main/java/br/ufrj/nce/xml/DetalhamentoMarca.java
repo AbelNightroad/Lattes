@@ -2,10 +2,13 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Embedded
 @XStreamAlias("DETALHAMENTO-DA-MARCA")
 public class DetalhamentoMarca {
 
@@ -21,6 +24,7 @@ public class DetalhamentoMarca {
 	@XStreamAsAttribute
 	private String natureza;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "REGISTRO-OU-PATENTE")
 	private List<RegistroOuPatente> registroOuPatente;
 

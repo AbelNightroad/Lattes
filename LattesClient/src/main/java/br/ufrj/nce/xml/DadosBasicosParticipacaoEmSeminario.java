@@ -1,8 +1,10 @@
 package br.ufrj.nce.xml;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
-
+@Embedded
 @XStreamAlias("DADOS-BASICOS-DA-PARTICIPACAO-EM-SEMINARIO")
 public class DadosBasicosParticipacaoEmSeminario {
 

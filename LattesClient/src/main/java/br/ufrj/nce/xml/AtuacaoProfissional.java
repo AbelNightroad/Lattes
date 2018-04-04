@@ -2,10 +2,13 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Embedded
 @XStreamAlias("ATUACAO-PROFISSIONAL")
 public class AtuacaoProfissional {
 
@@ -25,36 +28,47 @@ public class AtuacaoProfissional {
 	@XStreamAsAttribute
 	private String sequenciaImportancia;
 
+	@Embedded
 	@XStreamImplicit(itemFieldName = "VINCULOS")
 	private List<Vinculo> vinculos;
 
+	@Embedded
 	@XStreamAlias("ATIVIDADES-DE-DIRECAO-E-ADMINISTRACAO")
 	private List<AtividadeDeDirecaoEAdministracao> atividadesDeDirecaoEAdministracao;;
 
+	@Embedded
 	@XStreamAlias("ATIVIDADES-DE-PESQUISA-E-DESENVOLVIMENTO")
 	private List<AtividadeDePesquisaEDesenvolvimento> atividadesDePesquisaEDesenvolvimento;
 
+	@Embedded
 	@XStreamAlias("ATIVIDADES-DE-ENSINO")
 	private List<AtividadeDeEnsino> atividadesDeEnsino;
 	
+	@Embedded
 	@XStreamAlias("ATIVIDADES-DE-ESTAGIO")
 	private List<AtividadeDeEstagio> atividadesDeEstagio;
 	
+	@Embedded
 	@XStreamAlias("ATIVIDADES-DE-SERVICO-TECNICO-ESPECIALIZADO")
 	private List<AtividadeDeServicoTecnicoEspecializado> atividadesDeServicoTecnicoEspecializado;
 	
+	@Embedded
 	@XStreamAlias("ATIVIDADES-DE-EXTENSAO-UNIVERSITARIA")
 	private List<AtividadeExtensaoUniversitaria> atividadesExtensaoUniversitaria;
 	
+	@Embedded
 	@XStreamAlias("ATIVIDADES-DE-TREINAMENTO-MINISTRADO")
 	private List<AtividadeTreinamentoMinistrado> atividadesTreinamentoMinistrado;
 	
+	@Embedded
 	@XStreamAlias("OUTRAS-ATIVIDADES-TECNICO-CIENTIFICA")
 	private List<OutraAtividadeTecnicoCientifica> outrasAtividadesTecnicoCientificas;
 	
+	@Embedded
 	@XStreamAlias("ATIVIDADES-DE-CONSELHO-COMISSAO-E-CONSULTORIA")
 	private List<AtividadeConselhoComissaoConsultoria> atividadesConselhoComissaoConsultoria;
 	
+	@Embedded
 	@XStreamAlias("ATIVIDADES-DE-PARTICIPACAO-EM-PROJETO")
 	private List<AtividadeDeParticipacaoEmProjeto> atividadesDeParticipacaoEmProjeto;
 

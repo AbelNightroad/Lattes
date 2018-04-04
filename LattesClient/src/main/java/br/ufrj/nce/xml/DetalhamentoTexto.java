@@ -2,9 +2,12 @@ package br.ufrj.nce.xml;
 
 import java.time.LocalDate;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Embedded
 @XStreamAlias("DETALHAMENTO-DO-TEXTO")
 public class DetalhamentoTexto {
 	
@@ -22,7 +25,7 @@ public class DetalhamentoTexto {
 	
 	@XStreamAlias("DATA-DE-PUBLICACAO")
 	@XStreamAsAttribute
-	private LocalDate dataPublicacao;
+	private String dataPublicacao;
 	
 	@XStreamAlias("VOLUME")
 	@XStreamAsAttribute
@@ -64,11 +67,11 @@ public class DetalhamentoTexto {
 		this.formatoDataPublicacao = formatoDataPublicacao;
 	}
 
-	public LocalDate getDataPublicacao() {
+	public String getDataPublicacao() {
 		return dataPublicacao;
 	}
 
-	public void setDataPublicacao(LocalDate dataPublicacao) {
+	public void setDataPublicacao(String dataPublicacao) {
 		this.dataPublicacao = dataPublicacao;
 	}
 

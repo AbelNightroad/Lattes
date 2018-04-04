@@ -2,14 +2,19 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
+@Embedded
 @XStreamAlias("LIVROS-E-CAPITULOS")
 public class LivrosECapitulos {
 
+	@Embedded
 	@XStreamAlias("LIVROS-PUBLICADOS-OU-ORGANIZADOS")
 	private List<LivroPublicadoOuOrganizado> livrosPublicadosOuOrganizado;
 
+	@Embedded
 	@XStreamAlias("CAPITULOS-DE-LIVROS-PUBLICADOS")
 	private List<CapituloDeLivroPublicado> capitulosDeLivrosPublicados;
 

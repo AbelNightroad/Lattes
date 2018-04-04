@@ -2,30 +2,40 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Embedded
 @XStreamAlias("ORIENTACOES-EM-ANDAMENTO")
 public class OrientacoesEmAndamento {
 
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ORIENTACAO-EM-ANDAMENTO-DE-MESTRADO")
 	private List<OrientacaoAndamentoMestrado> orientacaoAndamentoMestrado;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ORIENTACAO-EM-ANDAMENTO-DE-DOUTORADO")
 	private List<OrientacaoAndamentoDoutorado> orientacaoAndamentoDoutorado;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ORIENTACAO-EM-ANDAMENTO-DE-POS-DOUTORADO")
 	private List<OrientacaoAndamentoPosDoutorado> orientacaoAndamentoPosDoutorado;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ORIENTACAO-EM-ANDAMENTO-DE-APERFEICOAMENTO-ESPECIALIZACAO")
 	private List<OrientacaoAndamentoAperfeicoamentoEspecializacao> orientacaoAndamentoAperfeicoamentoEspecializacao;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ORIENTACAO-EM-ANDAMENTO-DE-GRADUACAO")
 	private List<OrientacaoAndamentoGraduacao> orientacaoAndamentoGraduacao;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ORIENTACAO-EM-ANDAMENTO-DE-INICIACAO-CIENTIFICA")
 	private List<OrientacaoAndamentoIniciacaoCientifica> orientacaoAndamentoIniciacaoCientifica;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "OUTRAS-ORIENTACOES-EM-ANDAMENTO")
 	private List<OutrasOrientacoesAndamento> outrasOrientacoesAndamento;
 

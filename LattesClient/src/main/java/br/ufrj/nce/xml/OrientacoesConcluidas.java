@@ -2,21 +2,28 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Embedded
 @XStreamAlias("ORIENTACOES-CONCLUIDAS")
 public class OrientacoesConcluidas {
 
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ORIENTACOES-CONCLUIDAS-PARA-MESTRADO")
 	private List<OrientacaoConcluidaParaMestrado> orientacoesConcluidasParaMestrado;
 
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ORIENTACOES-CONCLUIDAS-PARA-DOUTORADO")
 	private List<OrientacaoConcluidaParaDoutorado> orientacoesConcluidasParaDoutorado;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ORIENTACOES-CONCLUIDAS-PARA-POS-DOUTORADO")
 	private List<OrientacaoConcluidaParaPosDoutorado> orientacoesConcluidasParaPosDoutorado;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "OUTRAS-ORIENTACOES-CONCLUIDAS")
 	private List<OutraOrientacaoConcluida> outrasOrientacoesConcluidas;
 

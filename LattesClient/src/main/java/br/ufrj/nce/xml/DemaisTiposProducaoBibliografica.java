@@ -1,19 +1,26 @@
 package br.ufrj.nce.xml;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
+@Embedded
 @XStreamAlias("DEMAIS-TIPOS-DE-PRODUCAO-BIBLIOGRAFICA")
 public class DemaisTiposProducaoBibliografica {
 	
+	@Embedded
 	@XStreamAlias("OUTRA-PRODUCAO-BIBLIOGRAFICA")
 	private OutraProducaoBibliografica outraProducaoBibliografica;
 	
+	@Embedded
 	@XStreamAlias("PARTITURA-MUSICAL")
 	private PartituraMusical partituraMusical;
 	
+	@Embedded
 	@XStreamAlias("PREFACIO-POSFACIO")
 	private PrefacioPosfacio prefacioPosfacio;
 	
+	@Embedded
 	@XStreamAlias("TRADUCAO")
 	private Traducao traducao;
 

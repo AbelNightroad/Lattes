@@ -2,24 +2,32 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Embedded
 @XStreamAlias("PARTICIPACAO-EM-BANCA-JULGADORA")
 public class ParticipacaoEmBancaJulgadora {
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "BANCA-JULGADORA-PARA-PROFESSOR-TITULAR")
 	private List<BancaJulgadoraProfessorTitular> bancaJulgadoraProfessorTitular;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "BANCA-JULGADORA-PARA-CONCURSO-PUBLICO")
 	private List<BancaJulgadoraParaConcursoPublico> bancaBancaJulgadoraParaConcursoPublico;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "BANCA-JULGADORA-PARA-LIVRE-DOCENCIA")
 	private List<BancaJulgadoraLivreDocencia> bancaJulgadoraLivreDocencia;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "BANCA-JULGADORA-PARA-AVALIACAO-CURSOS")
 	private List<BancaJulgadoraAvaliacaoCursos> bancaJulgadoraAvaliacaoCursos;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "OUTRAS-BANCAS-JULGADORAS")
 	private List<OutrasBancasJulgadoras> outrasBancasJulgadoras;
 

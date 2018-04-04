@@ -2,10 +2,13 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Embedded
 @XStreamAlias("PARTICIPACAO-EM-OFICINA")
 public class ParticipacaoEmOficina {
 
@@ -13,24 +16,31 @@ public class ParticipacaoEmOficina {
 	@XStreamAsAttribute
 	private String seqeuenciaProducao;
 	
+	@Embedded
 	@XStreamAlias("DADOS-BASICOS-DA-PARTICIPACAO-EM-OFICINA")
 	private DadosBasicosParticipacaoEmOficina dadosBasicosParticipacaoEmOficina;
 	
+	@Embedded
 	@XStreamAlias("DETALHAMENTO-DA-PARTICIPACAO-EM-OFICINA")
 	private DetalhamentoParticipacaoEmOficina detalhamentoParticipacaoEmOficina;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "PARTICIPANTE-DE-EVENTOS-CONGRESSOS")
 	private List<ParticipanteEventosCongressos> participanteEventosCongressos;
 	
+	@Embedded
 	@XStreamAlias("PALAVRAS-CHAVE")
 	private PalavrasChave palavrasChave;
 	
+	@Embedded
 	@XStreamAlias("AREAS-DO-CONHECIMENTO")
 	private AreasDoConhecimento areasDoConhecimento;
 	
+	@Embedded
 	@XStreamAlias("SETORES-DE-ATIVIDADE")
 	private SetoresDeAtividade setoresDeAtividade;
 	
+	@Embedded
 	@XStreamAlias("INFORMACOES-ADICIONAIS")
 	private InformacoesAdicionais informacoesAdicionais;
 

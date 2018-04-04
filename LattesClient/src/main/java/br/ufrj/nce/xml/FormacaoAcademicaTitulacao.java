@@ -2,46 +2,60 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Embedded
 @XStreamAlias("FORMACAO-ACADEMICA-TITULACAO")
 public class FormacaoAcademicaTitulacao {
 	
-
+	@Embedded
 	@XStreamImplicit(itemFieldName = "GRADUACAO")
 	private List<Graduacao> graduacoes;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ESPECIALIZACAO")
 	private List<Especializacao> especializacoes;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "MESTRADO")
 	private List<Mestrado> mestrados;
 
+	@Embedded
 	@XStreamImplicit(itemFieldName = "DOUTORADO")
 	private List<Doutorado> doutorados;
 
+	@Embedded
 	@XStreamImplicit(itemFieldName = "POS-DOUTORADO")
 	private List<PosDoutorado> posDoutorados;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "LIVRE-DOCENCIA")
 	private List<LivreDocencia> livreDocencias;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "CURSO-TECNICOPROFISSIONALIZANTE")
 	private List<CursoTecnicoProfissionalizante> cursosTecnicoProfissionalizantes;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "MESTRADO-PROFISSIONALIZANTE")
 	private List<MestradoProfissionalizante> mestradosProficionalizantes;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ENSINO-FUNDAMENTAL-PRIMEIRO-GRAU")
 	private List<EnsinoFundamental> ensinoFundamental;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ENSINO-MEDIO-SEGUNDO-GRAU")
 	private List<EnsinoMedio> ensinoMedio;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "RESIDENCIA-MEDICA")
 	private List<ResidenciaMedica> residenciasMedicas;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "APERFEICOAMENTO")
 	private List<Aperfeicoamento> aperfeicoamentos;
 

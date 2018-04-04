@@ -2,42 +2,56 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import org.mongodb.morphia.annotations.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Embedded
 @XStreamAlias("PRODUCAO-ARTISTICA-CULTURAL")
 public class ProducaoArtisticaCultural {
 
+	@Embedded
 	@XStreamImplicit(itemFieldName = "APRESENTACAO-DE-OBRA-ARTISTICA")
 	private List<ApresentacaoObraArtistica> apresentacoesObraArtistica;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "APRESENTACAO-EM-RADIO-OU-TV")
 	private List<ApresentacaoRadioTv> apresentacoesRadioTv;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ARRANJO-MUSICAL")
 	private List<ArranjoMusical> arranjosMusicais;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "COMPOSICAO-MUSICAL")
 	private List<ComposicaoMusical> composicoesMusicais;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "CURSO-DE-CURTA-DURACAO")
 	private List<CursoCurtaDuracao> cursosCurtaDuracao;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "OBRA-DE-ARTES-VISUAIS")
 	private List<ObraArtesVisuais> obrasArtesVisuais;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "OUTRA-PRODUCAO-ARTISTICA-CULTURAL")
 	private List<OutraProducaoArtisticaCultural> outrasProducoesArtisticasCulturais;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "SONOPLASTIA")
 	private List<Sonoplastia> sonoplastias;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ARTES-CENICAS")
 	private List<ArtesCenicas> artesCenicas;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "ARTE-VISUAIS")
 	private List<ArtesVisuais> artesVisuais;
 	
+	@Embedded
 	@XStreamImplicit(itemFieldName = "MUSICAS")
 	private List<Musica> musicas;
 

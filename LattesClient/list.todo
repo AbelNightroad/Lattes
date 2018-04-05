@@ -1,6 +1,4 @@
 LattesClient:
-	- Review FormacaoComplementar
-	- Review OutraProducao
-	- Review ParticipacaoEmBancaJulgadora
+	- Corrigir Mapeamento de LivrosECapitulos (remover o className)
 ColaboradorExterno:
 	- Review

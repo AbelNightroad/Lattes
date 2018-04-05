@@ -1,7 +1,5 @@
 package br.ufrj.nce.xml;
 
-import java.util.List;
-
 import org.mongodb.morphia.annotations.Embedded;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
@@ -9,31 +7,28 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 @Embedded
 @XStreamAlias("LIVROS-E-CAPITULOS")
 public class LivrosECapitulos {
-
+	
 	@Embedded
 	@XStreamAlias("LIVROS-PUBLICADOS-OU-ORGANIZADOS")
-	private List<LivroPublicadoOuOrganizado> livrosPublicadosOuOrganizado;
-
+	private LivrosPublicadosOuOrganizados livrosPublicadosOuOrganizados;
+	
 	@Embedded
 	@XStreamAlias("CAPITULOS-DE-LIVROS-PUBLICADOS")
-	private List<CapituloDeLivroPublicado> capitulosDeLivrosPublicados;
+	private CapitulosDeLivrosPublicados capitulosDeLivrosPublicados;
 
-	public List<LivroPublicadoOuOrganizado> getLivrosPublicadosOuOrganizado() {
-		return livrosPublicadosOuOrganizado;
+	public LivrosPublicadosOuOrganizados getLivrosPublicadosOuOrganizados() {
+		return livrosPublicadosOuOrganizados;
 	}
 
-	public void setLivrosPublicadosOuOrganizado(
-			List<LivroPublicadoOuOrganizado> livrosPublicadosOuOrganizado) {
-		this.livrosPublicadosOuOrganizado = livrosPublicadosOuOrganizado;
+	public void setLivrosPublicadosOuOrganizados(LivrosPublicadosOuOrganizados livrosPublicadosOuOrganizados) {
+		this.livrosPublicadosOuOrganizados = livrosPublicadosOuOrganizados;
 	}
 
-	public List<CapituloDeLivroPublicado> getCapitulosDeLivrosPublicados() {
+	public CapitulosDeLivrosPublicados getCapitulosDeLivrosPublicados() {
 		return capitulosDeLivrosPublicados;
 	}
 
-	public void setCapitulosDeLivrosPublicados(
-			List<CapituloDeLivroPublicado> capitulosDeLivrosPublicados) {
+	public void setCapitulosDeLivrosPublicados(CapitulosDeLivrosPublicados capitulosDeLivrosPublicados) {
 		this.capitulosDeLivrosPublicados = capitulosDeLivrosPublicados;
 	}
-
 }

@@ -9,7 +9,7 @@ import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
 @Embedded
-@XStreamAlias("CAPITULOS-DE-LIVROS-PUBLICADOS")
+@XStreamAlias("CAPITULO-DE-LIVRO-PUBLICADO")
 public class CapituloDeLivroPublicado {
 
 	@XStreamAlias("SEQUENCIA-PRODUCAO")

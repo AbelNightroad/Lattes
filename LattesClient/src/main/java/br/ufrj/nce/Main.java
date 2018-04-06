@@ -25,27 +25,32 @@ public class Main {
 		Main m = new Main();
 		ClassLoader cl = Main.class.getClassLoader();
 		
-//		for (String nome : listaXML) {
-//			InputStream input = cl.getResourceAsStream("files/" + nome);
-//			
-//			Curriculo curriculo = XmlUtil.fromXML(m.readFromInputStream(input));
-//
-//			System.out.println(curriculo.getNumeroIdentificador());
-//			System.out.println(curriculo.getHoraAtualizacao());
-//			System.out.println(curriculo.getOrigemXml());
-//			System.out.println(curriculo.getDadosGerais().getNomeCompleto());
-//			System.out.println();
-//			
-//			Key<Curriculo> key = dao.save(curriculo);
-//			System.out.println(key);
-//			System.out.println();
-//		}
+		for (String nome : listaXML) {
+			InputStream input = cl.getResourceAsStream("files/" + nome);
+			
+			Curriculo curriculo = XmlUtil.fromXML(m.readFromInputStream(input));
+
+			System.out.println(curriculo.getNumeroIdentificador());
+			System.out.println(curriculo.getHoraAtualizacao());
+			System.out.println(curriculo.getOrigemXml());
+			System.out.println(curriculo.getDadosGerais().getNomeCompleto());
+			System.out.println();
+			
+			Key<Curriculo> key = dao.save(curriculo);
+			System.out.println(key);
+			System.out.println();
+		}
 		
 
 		Query<Curriculo> query = dao.createQuery();
 		query.field("dadosGerais.nomeCompleto").contains("Jos");
 		System.out.println("QUERY >> ");
 		query.asList().forEach(i -> System.out.println(i.getDadosGerais().getNomeCompleto()));
+		
+		System.out.println("--------------");
+		
+		query = dao.createQuery();
+		query.asList().stream().map(Curriculo::getDadosGerais).forEach(i -> System.out.println(i.getNomeCompleto()));
 		
 	}
 	

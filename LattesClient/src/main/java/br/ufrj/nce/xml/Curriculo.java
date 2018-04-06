@@ -21,7 +21,7 @@ public class Curriculo {
 	@XStreamAsAttribute
 	private String origemXml;
 
-	@Indexed(options = @IndexOptions(unique = true))
+	//@Indexed(options = @IndexOptions(unique = true))
 	@XStreamAlias("NUMERO-IDENTIFICADOR")
 	@XStreamAsAttribute
 	private String numeroIdentificador;

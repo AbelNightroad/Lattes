@@ -1,11 +1,13 @@
 package br.ufrj.nce.xml;
 
+import javax.persistence.Embeddable;
+
 import org.mongodb.morphia.annotations.Embedded;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
-@Embedded
+@Embeddable
 @XStreamAlias("RESUMO-CV")
 public class ResumoCV {
 

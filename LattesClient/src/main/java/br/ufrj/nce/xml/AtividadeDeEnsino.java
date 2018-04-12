@@ -2,12 +2,24 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Entity
 @XStreamAlias("ENSINO")
 public class AtividadeDeEnsino {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
 	@XStreamAlias("SEQUENCIA-FUNCAO-ATIVIDADE")
 	@XStreamAsAttribute
 	private String sequenciaFuncaoAtividade;
@@ -56,6 +68,7 @@ public class AtividadeDeEnsino {
 	@XStreamAsAttribute
 	private String nomeCursoIngles;
 
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "DISCIPLINA")
 	private List<Disciplina> disciplinas;
 

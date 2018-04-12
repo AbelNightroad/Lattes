@@ -2,56 +2,64 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Entity
 @XStreamAlias("PRODUCAO-ARTISTICA-CULTURAL")
 public class ProducaoArtisticaCultural {
 
-	@Embedded
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "APRESENTACAO-DE-OBRA-ARTISTICA")
 	private List<ApresentacaoObraArtistica> apresentacoesObraArtistica;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "APRESENTACAO-EM-RADIO-OU-TV")
 	private List<ApresentacaoRadioTv> apresentacoesRadioTv;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "ARRANJO-MUSICAL")
 	private List<ArranjoMusical> arranjosMusicais;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "COMPOSICAO-MUSICAL")
 	private List<ComposicaoMusical> composicoesMusicais;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "CURSO-DE-CURTA-DURACAO")
 	private List<CursoCurtaDuracao> cursosCurtaDuracao;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "OBRA-DE-ARTES-VISUAIS")
 	private List<ObraArtesVisuais> obrasArtesVisuais;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "OUTRA-PRODUCAO-ARTISTICA-CULTURAL")
 	private List<OutraProducaoArtisticaCultural> outrasProducoesArtisticasCulturais;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "SONOPLASTIA")
 	private List<Sonoplastia> sonoplastias;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "ARTES-CENICAS")
 	private List<ArtesCenicas> artesCenicas;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "ARTE-VISUAIS")
 	private List<ArtesVisuais> artesVisuais;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "MUSICAS")
 	private List<Musica> musicas;
 

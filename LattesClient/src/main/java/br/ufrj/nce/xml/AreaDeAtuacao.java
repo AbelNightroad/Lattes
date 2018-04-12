@@ -1,12 +1,12 @@
 package br.ufrj.nce.xml;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.Embeddable;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
 
-@Embedded
+@Embeddable
 @XStreamAlias("AREA-DE-ATUACAO")
 public class AreaDeAtuacao {
 

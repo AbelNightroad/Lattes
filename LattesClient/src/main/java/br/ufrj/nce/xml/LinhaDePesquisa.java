@@ -1,8 +1,12 @@
 package br.ufrj.nce.xml;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Embeddable
 @XStreamAlias("LINHA-DE-PESQUISA")
 public class LinhaDePesquisa {
 
@@ -29,16 +33,17 @@ public class LinhaDePesquisa {
 	@XStreamAlias("OBJETIVOS-LINHA-DE-PESQUISA-INGLES")
 	@XStreamAsAttribute
 	private String objetivosLinhaDePesquisaIngles;
-	
+
+	@Embedded
 	@XStreamAlias("PALAVRAS-CHAVE")
-	@XStreamAsAttribute
 	private PalavrasChave palavrasChave;
 	
+	@Embedded
 	@XStreamAlias("AREAS-DO-CONHECIMENTO")
 	private AreasDoConhecimento areasDoConhecimento;
 	
+	@Embedded
 	@XStreamAlias("SETORES-DE-ATIVIDADE")
-	@XStreamAsAttribute
 	private SetoresDeAtividade setoresDeAtividade;
 
 	public String getSequenciaLinha() {

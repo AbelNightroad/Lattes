@@ -1,13 +1,11 @@
 package br.ufrj.nce.xml;
 
-import java.time.LocalDate;
-
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.Embeddable;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
-@Embedded
+@Embeddable
 @XStreamAlias("DETALHAMENTO-DO-TEXTO")
 public class DetalhamentoTexto {
 	

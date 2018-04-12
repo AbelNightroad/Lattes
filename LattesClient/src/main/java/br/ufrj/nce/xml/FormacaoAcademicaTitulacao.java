@@ -2,60 +2,61 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embeddable;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Embeddable
 @XStreamAlias("FORMACAO-ACADEMICA-TITULACAO")
 public class FormacaoAcademicaTitulacao {
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "GRADUACAO")
 	private List<Graduacao> graduacoes;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "ESPECIALIZACAO")
 	private List<Especializacao> especializacoes;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "MESTRADO")
 	private List<Mestrado> mestrados;
 
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "DOUTORADO")
 	private List<Doutorado> doutorados;
 
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "POS-DOUTORADO")
 	private List<PosDoutorado> posDoutorados;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "LIVRE-DOCENCIA")
 	private List<LivreDocencia> livreDocencias;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "CURSO-TECNICOPROFISSIONALIZANTE")
 	private List<CursoTecnicoProfissionalizante> cursosTecnicoProfissionalizantes;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "MESTRADO-PROFISSIONALIZANTE")
 	private List<MestradoProfissionalizante> mestradosProficionalizantes;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "ENSINO-FUNDAMENTAL-PRIMEIRO-GRAU")
 	private List<EnsinoFundamental> ensinoFundamental;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "ENSINO-MEDIO-SEGUNDO-GRAU")
 	private List<EnsinoMedio> ensinoMedio;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "RESIDENCIA-MEDICA")
 	private List<ResidenciaMedica> residenciasMedicas;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "APERFEICOAMENTO")
 	private List<Aperfeicoamento> aperfeicoamentos;
 

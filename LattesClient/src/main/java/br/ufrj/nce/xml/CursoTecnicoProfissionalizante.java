@@ -1,8 +1,11 @@
 package br.ufrj.nce.xml;
 
+import javax.persistence.Embeddable;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Embeddable
 @XStreamAlias("CURSO-TECNICO-PROFISSIONALIZANTE")
 public class CursoTecnicoProfissionalizante {
 	
@@ -52,7 +55,7 @@ public class CursoTecnicoProfissionalizante {
 	
 	@XStreamAlias("FLAG-BOLSA")
 	@XStreamAsAttribute
-	private String flagBolsa; //Verificar possivel troca para Boolean
+	private String flagBolsa;
 	
 	@XStreamAlias("CODIGO-AGENCIA-FINANCIADORA")
 	@XStreamAsAttribute

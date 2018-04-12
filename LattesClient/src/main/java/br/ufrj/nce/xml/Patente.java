@@ -2,15 +2,24 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Entity
 @XStreamAlias("PATENTE")
 public class Patente {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 	
 	@XStreamAlias("SEQUENCIA-PRODUCAO")
 	@XStreamAsAttribute
@@ -24,7 +33,7 @@ public class Patente {
 	@XStreamAlias("DETALHAMENTO-DA-PATENTE")
 	private DetalhamentoPatente detalhamentoPatente;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "AUTORES")
 	private List<Autor> autores;
 	

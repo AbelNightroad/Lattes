@@ -2,12 +2,22 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
+@Entity
 @XStreamAlias("PARTICIPACAO-EM-PROJETO")
 public class AtividadeDeParticipacaoEmProjeto {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 
 	@XStreamAlias("SEQUENCIA-FUNCAO-ATIVIDADE")
 	@XStreamAsAttribute

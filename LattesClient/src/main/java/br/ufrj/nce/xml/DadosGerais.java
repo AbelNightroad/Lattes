@@ -2,12 +2,15 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+import javax.persistence.OneToMany;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
-@Embedded
+@Embeddable
 @XStreamAlias("DADOS-GERAIS")
 public class DadosGerais {
 
@@ -131,19 +134,19 @@ public class DadosGerais {
 	@XStreamAlias("FORMACAO-ACADEMICA-TITULACAO")
 	private FormacaoAcademicaTitulacao formacaoAcademicaTitulacao;
 
-	@Embedded
+	@OneToMany
 	@XStreamAlias("ATUACOES-PROFISSIONAIS")
 	private List<AtuacaoProfissional> atuacoesProfissionais;
 
-	@Embedded
+	@ElementCollection
 	@XStreamAlias("AREAS-DE-ATUACAO")
 	private List<AreaDeAtuacao> areasDeAtuacao;
 
-	@Embedded
+	@ElementCollection
 	@XStreamAlias("IDIOMAS")
 	private List<Idioma> idiomas;
 
-	@Embedded
+	@ElementCollection
 	@XStreamAlias("PREMIOS-TITULOS")
 	private List<PremioTitulo> premiosTitulos;
 

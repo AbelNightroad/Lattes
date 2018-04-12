@@ -2,16 +2,25 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Entity
 @XStreamAlias("ORGANIZACAO-DE-EVENTO")
 public class OrganizacaoDeEvento {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
 	@XStreamAlias("SEQUENCIA-PRODUCAO")
 	@XStreamAsAttribute
 	private String sequenciaProducao;
@@ -24,7 +33,7 @@ public class OrganizacaoDeEvento {
 	@XStreamAlias("DETALHAMENTO-DA-ORGANIZACAO-DE-EVENTO")
 	private DetalhamentoDaOrganizacaoDeEvento detalhamentoDaOrganizacaoDeEvento;
 
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "AUTORES")
 	private List<Autor> autores;
 

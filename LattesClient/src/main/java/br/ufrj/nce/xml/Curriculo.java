@@ -1,27 +1,32 @@
 package br.ufrj.nce.xml;
 
-import org.bson.types.ObjectId;
-import org.mongodb.morphia.annotations.Embedded;
-import org.mongodb.morphia.annotations.Entity;
-import org.mongodb.morphia.annotations.Id;
-import org.mongodb.morphia.annotations.IndexOptions;
-import org.mongodb.morphia.annotations.Indexed;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
-@Entity(noClassnameStored = true, value = "curriculos")
+@Entity
 @XStreamAlias("CURRICULO-VITAE")
 public class Curriculo {
 	
 	@Id
-	private ObjectId id;
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "curriculoIdGen")
+	@SequenceGenerator(
+			name = "curriculoIdGen",
+			sequenceName = "curriculo_id",
+			initialValue = 1,
+			allocationSize = 1)
+	private Long id;
 
 	@XStreamAlias("SISTEMA-ORIGEM-XML")
 	@XStreamAsAttribute
 	private String origemXml;
 
-	//@Indexed(options = @IndexOptions(unique = true))
 	@XStreamAlias("NUMERO-IDENTIFICADOR")
 	@XStreamAsAttribute
 	private String numeroIdentificador;
@@ -61,6 +66,14 @@ public class Curriculo {
 	@Embedded
 	@XStreamAlias("DADOS-COMPLEMENTARES")
 	private DadosComplementares dadosComplementares;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getOrigemXml() {
 		return origemXml;

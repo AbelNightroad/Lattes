@@ -2,13 +2,15 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Embeddable
 @XStreamAlias("PREFACIO-POSFACIO")
 public class PrefacioPosfacio {
 
@@ -24,7 +26,7 @@ public class PrefacioPosfacio {
 	@XStreamAlias("DETALHAMENTO-DO-PREFACIO-POSFACIO")
 	private DetalhamentoPrefacioPosfacio detalhamentoPrefacioPosfacio;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "AUTORES")
 	private List<Autor> autores;
 	

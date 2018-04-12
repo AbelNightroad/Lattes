@@ -2,13 +2,15 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Embeddable
 @XStreamAlias("PARTITURA-MUSICAL")
 public class PartituraMusical {
 	
@@ -24,7 +26,7 @@ public class PartituraMusical {
 	@XStreamAlias("DETALHAMENTO-DA-PARTITURA")
 	private DetalhamentoPartitura detalhamentoPartitura;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "AUTORES")
 	private List<Autor> autores;
 	

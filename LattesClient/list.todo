@@ -1,4 +1,3 @@
 LattesClient:
 	- Corrigir Mapeamento de LivrosECapitulos (remover o className)
-ColaboradorExterno:
-	- Review
+	- Mudar sistema de arquivos do MongoDB para GridFS

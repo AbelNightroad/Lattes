@@ -1,11 +1,12 @@
 package br.ufrj.nce.xml;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
-@Embedded
+@Embeddable
 @XStreamAlias("ENDERECO")
 public class Endereco {
 
@@ -13,9 +14,11 @@ public class Endereco {
 	@XStreamAsAttribute
 	private String flagPreferencia;
 
+	@Embedded
 	@XStreamAlias("ENDERECO-PROFISSIONAL")
 	private EnderecoProfissional enderecoProfissional;
 	
+	@Embedded
 	@XStreamAlias("ENDERECO-RESIDENCIAL")
 	private EnderecoResidencial enderecoResidencial;
 

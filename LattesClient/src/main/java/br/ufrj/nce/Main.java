@@ -6,6 +6,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.List;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.transaction.TransactionManager;
+
 import org.mongodb.morphia.Key;
 import org.mongodb.morphia.query.Query;
 
@@ -25,6 +30,9 @@ public class Main {
 		Main m = new Main();
 		ClassLoader cl = Main.class.getClassLoader();
 		
+		TransactionManager tm = com.arjuna.ats.jta.TransactionManager.transactionManager();
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("LattesClient");
+		
 		for (String nome : listaXML) {
 			InputStream input = cl.getResourceAsStream("files/" + nome);
 			
@@ -36,21 +44,30 @@ public class Main {
 			System.out.println(curriculo.getDadosGerais().getNomeCompleto());
 			System.out.println();
 			
-			Key<Curriculo> key = dao.save(curriculo);
-			System.out.println(key);
-			System.out.println();
+			try {
+				tm.begin();
+				EntityManager em = emf.createEntityManager();
+				em.persist(curriculo);
+				
+				
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
+//			Key<Curriculo> key = dao.save(curriculo);
+//			System.out.println(key);
+//			System.out.println();
 		}
 		
 
-		Query<Curriculo> query = dao.createQuery();
-		query.field("dadosGerais.nomeCompleto").contains("Jos");
-		System.out.println("QUERY >> ");
-		query.asList().forEach(i -> System.out.println(i.getDadosGerais().getNomeCompleto()));
-		
-		System.out.println("--------------");
-		
-		query = dao.createQuery();
-		query.asList().stream().map(Curriculo::getDadosGerais).forEach(i -> System.out.println(i.getNomeCompleto()));
+//		Query<Curriculo> query = dao.createQuery();
+//		query.field("dadosGerais.nomeCompleto").contains("Jos");
+//		System.out.println("QUERY >> ");
+//		query.asList().forEach(i -> System.out.println(i.getDadosGerais().getNomeCompleto()));
+//		
+//		System.out.println("--------------");
+//		
+//		query = dao.createQuery();
+//		query.asList().stream().map(Curriculo::getDadosGerais).forEach(i -> System.out.println(i.getNomeCompleto()));
 		
 	}
 	

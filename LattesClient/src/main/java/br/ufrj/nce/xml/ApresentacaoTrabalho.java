@@ -2,15 +2,24 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Entity
 @XStreamAlias("APRESENTACAO-DE-TRABALHO")
 public class ApresentacaoTrabalho {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 
 	@XStreamAlias("SEQUENCIA-PRODUCAO")
 	@XStreamAsAttribute
@@ -24,7 +33,7 @@ public class ApresentacaoTrabalho {
 	@XStreamAlias("DETALHAMENTO-DA-APRESENTACAO-DE-TRABALHO")
 	private DetalhamentoApresentacaoTrabalho detalhamentoApresentacaoTrabalho;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "AUTORES")
 	private List<Autor> autores;
 	
@@ -43,4 +52,76 @@ public class ApresentacaoTrabalho {
 	@Embedded
 	@XStreamAlias("INFORMACOES-ADICIONAIS")
 	private InformacoesAdicionais informacoesAdicionais;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getSequenciaProducao() {
+		return sequenciaProducao;
+	}
+
+	public void setSequenciaProducao(String sequenciaProducao) {
+		this.sequenciaProducao = sequenciaProducao;
+	}
+
+	public DadosBasicosApresentacaoTrabalho getDadosBasicosApresentacaoTrabalho() {
+		return dadosBasicosApresentacaoTrabalho;
+	}
+
+	public void setDadosBasicosApresentacaoTrabalho(DadosBasicosApresentacaoTrabalho dadosBasicosApresentacaoTrabalho) {
+		this.dadosBasicosApresentacaoTrabalho = dadosBasicosApresentacaoTrabalho;
+	}
+
+	public DetalhamentoApresentacaoTrabalho getDetalhamentoApresentacaoTrabalho() {
+		return detalhamentoApresentacaoTrabalho;
+	}
+
+	public void setDetalhamentoApresentacaoTrabalho(DetalhamentoApresentacaoTrabalho detalhamentoApresentacaoTrabalho) {
+		this.detalhamentoApresentacaoTrabalho = detalhamentoApresentacaoTrabalho;
+	}
+
+	public List<Autor> getAutores() {
+		return autores;
+	}
+
+	public void setAutores(List<Autor> autores) {
+		this.autores = autores;
+	}
+
+	public PalavrasChave getPalavrasChave() {
+		return palavrasChave;
+	}
+
+	public void setPalavrasChave(PalavrasChave palavrasChave) {
+		this.palavrasChave = palavrasChave;
+	}
+
+	public AreasDoConhecimento getAreasDoConhecimento() {
+		return areasDoConhecimento;
+	}
+
+	public void setAreasDoConhecimento(AreasDoConhecimento areasDoConhecimento) {
+		this.areasDoConhecimento = areasDoConhecimento;
+	}
+
+	public SetoresDeAtividade getSetoresDeAtividade() {
+		return setoresDeAtividade;
+	}
+
+	public void setSetoresDeAtividade(SetoresDeAtividade setoresDeAtividade) {
+		this.setoresDeAtividade = setoresDeAtividade;
+	}
+
+	public InformacoesAdicionais getInformacoesAdicionais() {
+		return informacoesAdicionais;
+	}
+
+	public void setInformacoesAdicionais(InformacoesAdicionais informacoesAdicionais) {
+		this.informacoesAdicionais = informacoesAdicionais;
+	}
 }

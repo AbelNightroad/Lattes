@@ -1,20 +1,23 @@
 package br.ufrj.nce.xml;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
-@Embedded
+@Embeddable
 @XStreamAlias("AREAS-DO-CONHECIMENTO")
 public class AreasDoConhecimento {
 
+	@Embedded
 	@XStreamAlias("AREA-DO-CONHECIMENTO-1")
 	private AreaDoConhecimento areaDoConhecimento1;
 
+	@Embedded
 	@XStreamAlias("AREA-DO-CONHECIMENTO-2")
 	private AreaDoConhecimento areaDoConhecimento2;
 
-
+	@Embedded
 	@XStreamAlias("AREA-DO-CONHECIMENTO-3")
 	private AreaDoConhecimento areaDoConhecimento3;
 

@@ -2,15 +2,25 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Entity
 @XStreamAlias("ATUACAO-PROFISSIONAL")
 public class AtuacaoProfissional {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 
 	@XStreamAlias("CODIGO-INSTITUICAO")
 	@XStreamAsAttribute
@@ -28,47 +38,47 @@ public class AtuacaoProfissional {
 	@XStreamAsAttribute
 	private String sequenciaImportancia;
 
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "VINCULOS")
 	private List<Vinculo> vinculos;
 
-	@Embedded
+	@ElementCollection
 	@XStreamAlias("ATIVIDADES-DE-DIRECAO-E-ADMINISTRACAO")
 	private List<AtividadeDeDirecaoEAdministracao> atividadesDeDirecaoEAdministracao;;
 
-	@Embedded
+	@OneToMany
 	@XStreamAlias("ATIVIDADES-DE-PESQUISA-E-DESENVOLVIMENTO")
 	private List<AtividadeDePesquisaEDesenvolvimento> atividadesDePesquisaEDesenvolvimento;
 
-	@Embedded
+	@OneToMany
 	@XStreamAlias("ATIVIDADES-DE-ENSINO")
 	private List<AtividadeDeEnsino> atividadesDeEnsino;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamAlias("ATIVIDADES-DE-ESTAGIO")
 	private List<AtividadeDeEstagio> atividadesDeEstagio;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamAlias("ATIVIDADES-DE-SERVICO-TECNICO-ESPECIALIZADO")
 	private List<AtividadeDeServicoTecnicoEspecializado> atividadesDeServicoTecnicoEspecializado;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamAlias("ATIVIDADES-DE-EXTENSAO-UNIVERSITARIA")
 	private List<AtividadeExtensaoUniversitaria> atividadesExtensaoUniversitaria;
 	
-	@Embedded
+	@OneToMany
 	@XStreamAlias("ATIVIDADES-DE-TREINAMENTO-MINISTRADO")
 	private List<AtividadeTreinamentoMinistrado> atividadesTreinamentoMinistrado;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamAlias("OUTRAS-ATIVIDADES-TECNICO-CIENTIFICA")
 	private List<OutraAtividadeTecnicoCientifica> outrasAtividadesTecnicoCientificas;
 	
-	@Embedded
+	@ElementCollection
 	@XStreamAlias("ATIVIDADES-DE-CONSELHO-COMISSAO-E-CONSULTORIA")
 	private List<AtividadeConselhoComissaoConsultoria> atividadesConselhoComissaoConsultoria;
 	
-	@Embedded
+	@OneToMany
 	@XStreamAlias("ATIVIDADES-DE-PARTICIPACAO-EM-PROJETO")
 	private List<AtividadeDeParticipacaoEmProjeto> atividadesDeParticipacaoEmProjeto;
 

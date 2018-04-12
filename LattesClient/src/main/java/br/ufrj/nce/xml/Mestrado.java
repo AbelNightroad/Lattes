@@ -1,8 +1,12 @@
 package br.ufrj.nce.xml;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Embeddable
 @XStreamAlias("MESTRADO")
 public class Mestrado {
 
@@ -122,13 +126,15 @@ public class Mestrado {
 	@XStreamAsAttribute
 	private String nomeOrientadorDout;
 
+	@Embedded
 	@XStreamAlias("PALAVRAS-CHAVE")
 	private PalavrasChave palavrasChave;
 
+	@Embedded
 	@XStreamAlias("AREAS-DO-CONHECIMENTO")
 	private AreasDoConhecimento areasDoConhecimento;
 
-	@XStreamAsAttribute
+	@Embedded
 	@XStreamAlias("SETORES-DE-ATIVIDADE")
 	private SetoresDeAtividade setoresDeAtividade;
 

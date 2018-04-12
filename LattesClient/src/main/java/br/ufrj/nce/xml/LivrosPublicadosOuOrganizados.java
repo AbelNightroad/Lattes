@@ -2,16 +2,17 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.Embeddable;
+import javax.persistence.OneToMany;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Embeddable
 @XStreamAlias("LIVROS-PUBLICADOS-OU-ORGANIZADOS")
 public class LivrosPublicadosOuOrganizados {
 
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "LIVRO-PUBLICADO-OU-ORGANIZADO")
 	private List<LivroPublicadoOuOrganizado> livroPublicadoOuOrganizado;
 

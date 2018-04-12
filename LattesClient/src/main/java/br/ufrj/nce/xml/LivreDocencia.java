@@ -1,8 +1,12 @@
 package br.ufrj.nce.xml;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Embeddable
 @XStreamAlias("LIVRE-DOCENCIA")
 public class LivreDocencia {
 	
@@ -33,17 +37,17 @@ public class LivreDocencia {
 	@XStreamAlias("TITULO-DO-TRABALHO-INGLES")
 	@XStreamAsAttribute
 	private String tituloTrabalhoIngles;
-	
+
+	@Embedded
 	@XStreamAlias("PALAVRAS-CHAVE")
-	@XStreamAsAttribute
 	private PalavrasChave palavrasChave;
 	
+	@Embedded
 	@XStreamAlias("AREAS-DO-CONHECIMENTO")
-	@XStreamAsAttribute
 	private AreasDoConhecimento areasDoConhecimento;
 	
+	@Embedded
 	@XStreamAlias("SETORES-DE-ATIVIDADE")
-	@XStreamAsAttribute
 	private SetoresDeAtividade setoresDeAtividade;
 
 	public String getSequeciaFormacao() {

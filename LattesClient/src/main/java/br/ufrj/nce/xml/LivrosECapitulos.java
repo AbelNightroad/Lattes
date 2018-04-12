@@ -1,12 +1,20 @@
 package br.ufrj.nce.xml;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
-@Embedded
+@Entity
 @XStreamAlias("LIVROS-E-CAPITULOS")
 public class LivrosECapitulos {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 	
 	@Embedded
 	@XStreamAlias("LIVROS-PUBLICADOS-OU-ORGANIZADOS")

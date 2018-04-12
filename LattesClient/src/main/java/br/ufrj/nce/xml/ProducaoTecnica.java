@@ -2,52 +2,54 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+import javax.persistence.OneToMany;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Embeddable
 @XStreamAlias("PRODUCAO-TECNICA")
 public class ProducaoTecnica {
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "CULTIVAR-REGISTRADA")
 	private List<CultivarRegistrada> cultivarRegistradas;
 
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "SOFTWARE")
 	private List<Software> softwares;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "PATENTE")
 	private List<Patente> patentes;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "CULTIVAR-PROTEGIDA")
 	private List<CultivarProtegida> cultivarProtegidas;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "DESENHO-INDUSTRIAL")
 	private List<DesenhoIndustrial> desenhosIndustriais;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "MARCA")
 	private List<Marca> marcas;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "TOPOGRAFIA-DE-CIRCUITO-INTEGRADO")
 	private List<TopografiaCircuitoIntegrado> topografiasCircuitoIntegrado;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "PRODUTO-TECNOLOGICO")
 	private List<ProdutoTecnologico> produtosTecnologicos;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "PROCESSOS-OU-TECNICAS")
 	private List<ProcessosOuTecnicas> processosOuTecnicas;
 	
-	@Embedded
+	@OneToMany
 	@XStreamImplicit(itemFieldName = "TRABALHO-TECNICO")
 	private List<TrabalhoTecnico> trabalhosTecnicos;
 	

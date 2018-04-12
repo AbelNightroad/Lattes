@@ -2,35 +2,36 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.Embeddable;
+import javax.persistence.OneToMany;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
-@Embedded
+@Embeddable
 @XStreamAlias("PRODUCAO-BIBLIOGRAFICA")
 public class ProducaoBibliografica {
 
-	@Embedded
+	@OneToMany
 	@XStreamAlias("TRABALHOS-EM-EVENTOS")
 	private List<TrabalhoEmEvento> trabalhosEmEventos;
 
-	@Embedded
+	@OneToMany
 	@XStreamAlias("ARTIGOS-PUBLICADOS")
 	private List<ArtigoPublicado> artigosPublicados;
 
-	@Embedded
+	@OneToMany
 	@XStreamAlias("LIVROS-E-CAPITULOS")
 	private List<LivrosECapitulos> livrosECapitulos;
 	
-	@Embedded
+	@OneToMany
 	@XStreamAlias("TEXTOS-EM-JORNAIS-OU-REVISTAS")
 	private List<TextoJornaisRevistas> textojornaisRevistas;
 	
-	@Embedded
+	@OneToMany
 	@XStreamAlias("DEMAIS-TIPOS-DE-PRODUCAO-BIBLIOGRAFICA")
 	private List<DemaisTiposProducaoBibliografica> demaisTiposProducaoBibliograficas;
 	
-	@Embedded
+	@OneToMany
 	@XStreamAlias("ARTIGOS-ACEITOS-PARA-PUBLICACAO")
 	private List<ArtigoAceitosPublicacao> artigosAceitosPublicacaos;
 

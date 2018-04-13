@@ -2,6 +2,7 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Embeddable;
 import javax.persistence.OneToMany;
 
@@ -11,29 +12,29 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 @XStreamAlias("PRODUCAO-BIBLIOGRAFICA")
 public class ProducaoBibliografica {
 
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamAlias("TRABALHOS-EM-EVENTOS")
 	private List<TrabalhoEmEvento> trabalhosEmEventos;
 
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamAlias("ARTIGOS-PUBLICADOS")
 	private List<ArtigoPublicado> artigosPublicados;
 
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamAlias("LIVROS-E-CAPITULOS")
 	private List<LivrosECapitulos> livrosECapitulos;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamAlias("TEXTOS-EM-JORNAIS-OU-REVISTAS")
 	private List<TextoJornaisRevistas> textojornaisRevistas;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamAlias("DEMAIS-TIPOS-DE-PRODUCAO-BIBLIOGRAFICA")
 	private List<DemaisTiposProducaoBibliografica> demaisTiposProducaoBibliograficas;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamAlias("ARTIGOS-ACEITOS-PARA-PUBLICACAO")
-	private List<ArtigoAceitosPublicacao> artigosAceitosPublicacaos;
+	private List<ArtigoAceitoPublicacao> artigosAceitosPublicacaos;
 
 	public List<TrabalhoEmEvento> getTrabalhosEmEventos() {
 		return trabalhosEmEventos;
@@ -76,11 +77,11 @@ public class ProducaoBibliografica {
 		this.demaisTiposProducaoBibliograficas = demaisTiposProducaoBibliograficas;
 	}
 
-	public List<ArtigoAceitosPublicacao> getArtigosAceitosPublicacaos() {
+	public List<ArtigoAceitoPublicacao> getArtigosAceitosPublicacaos() {
 		return artigosAceitosPublicacaos;
 	}
 
-	public void setArtigosAceitosPublicacaos(List<ArtigoAceitosPublicacao> artigosAceitosPublicacaos) {
+	public void setArtigosAceitosPublicacaos(List<ArtigoAceitoPublicacao> artigosAceitosPublicacaos) {
 		this.artigosAceitosPublicacaos = artigosAceitosPublicacaos;
 	}
 

@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-	<persistence-unit name="LattesClient">
-	<provider>org.hibernate.ejb.HibernatePersistence</provider>
- 
-        <properties>
-<!--         	<property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/> -->
-<!--             <property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver" /> -->
-<!--             <property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:file:hsqldb/Lattes" /> -->
-            
-            <property name="javax.persistence.jdbc.user" value="sa" />
-            <property name="javax.persistence.jdbc.password" value="" />
-            
-            <property name="hibernate.show_sql" value="true" />
-            <property name="hibernate.format_sql" value="true" />
-            <property name="hibernate.connection.shutdown" value="true"/>
-            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
-            
-            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
-			<property name="hibernate.connection.driver_class" value="org.h2.Driver" />
-			<property name="hibernate.connection.url" value="jdbc:h2:./h2/Lattes" />
-        </properties>
+	<persistence-unit name="LattesClient" transaction-type="JTA">
+	<provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider>
+		<properties>
+			<property name="hibernate.ogm.datastore.provider" value="org.hibernate.ogm.datastore.couchdb.impl.CouchDBDatastoreProvider"/>
+			<property name="hibernate.ogm.datastore.database" value="curriculos"/>
+			<property name="hibernate.ogm.datastore.host" value="localhost:5984"/>
+			<property name="hibernate.ogm.datastore.create_database" value="true"/>
+		</properties>
 	</persistence-unit>
 </persistence>

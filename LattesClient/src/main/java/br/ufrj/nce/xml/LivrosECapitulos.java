@@ -24,6 +24,14 @@ public class LivrosECapitulos {
 	@XStreamAlias("CAPITULOS-DE-LIVROS-PUBLICADOS")
 	private CapitulosDeLivrosPublicados capitulosDeLivrosPublicados;
 
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public LivrosPublicadosOuOrganizados getLivrosPublicadosOuOrganizados() {
 		return livrosPublicadosOuOrganizados;
 	}

@@ -2,16 +2,25 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Entity
 @XStreamAlias("PARTICIPACAO-EM-SIMPOSIO")
 public class ParticipacaoEmSimposio {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
 	@XStreamAlias("SEQUENCIA-PRODUCAO")
 	@XStreamAsAttribute
 	private String sequenciaProducao;
@@ -24,7 +33,7 @@ public class ParticipacaoEmSimposio {
 	@XStreamAlias("DETALHAMENTO-DA-PARTICIPACAO-EM-SIMPOSIO")
 	private DetalhamentoDaParticipacaoEmSimposio detalhamentoDaParticipacaoEmSimposio;
 
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "PARTICIPANTE-DE-EVENTOS-CONGRESSOS")
 	private List<ParticipanteEventosCongressos> participanteEventosCongressos;
 
@@ -43,6 +52,14 @@ public class ParticipacaoEmSimposio {
 	@Embedded
 	@XStreamAlias("INFORMACOES-ADICIONAIS")
 	private InformacoesAdicionais informacoesAdicionais;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getSequenciaProducao() {
 		return sequenciaProducao;

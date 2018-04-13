@@ -2,16 +2,17 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embeddable;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Embeddable
 @XStreamAlias("INFORMACOES-ADICIONAIS-CURSOS")
 public class InformacoesAdicionaisCursos {
 
-	@Embedded
+	@ElementCollection
 	@XStreamImplicit(itemFieldName = "INFORMACAO-ADICIONAL-CURSO")
 	private List<InformacaoAdicionalCurso> informacaoAdicionalCurso;
 

@@ -2,6 +2,7 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.ElementCollection;
 import javax.persistence.Embeddable;
 import javax.persistence.Entity;
@@ -46,11 +47,11 @@ public class AtuacaoProfissional {
 	@XStreamAlias("ATIVIDADES-DE-DIRECAO-E-ADMINISTRACAO")
 	private List<AtividadeDeDirecaoEAdministracao> atividadesDeDirecaoEAdministracao;;
 
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamAlias("ATIVIDADES-DE-PESQUISA-E-DESENVOLVIMENTO")
 	private List<AtividadeDePesquisaEDesenvolvimento> atividadesDePesquisaEDesenvolvimento;
 
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamAlias("ATIVIDADES-DE-ENSINO")
 	private List<AtividadeDeEnsino> atividadesDeEnsino;
 	
@@ -66,7 +67,7 @@ public class AtuacaoProfissional {
 	@XStreamAlias("ATIVIDADES-DE-EXTENSAO-UNIVERSITARIA")
 	private List<AtividadeExtensaoUniversitaria> atividadesExtensaoUniversitaria;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamAlias("ATIVIDADES-DE-TREINAMENTO-MINISTRADO")
 	private List<AtividadeTreinamentoMinistrado> atividadesTreinamentoMinistrado;
 	
@@ -78,9 +79,17 @@ public class AtuacaoProfissional {
 	@XStreamAlias("ATIVIDADES-DE-CONSELHO-COMISSAO-E-CONSULTORIA")
 	private List<AtividadeConselhoComissaoConsultoria> atividadesConselhoComissaoConsultoria;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamAlias("ATIVIDADES-DE-PARTICIPACAO-EM-PROJETO")
 	private List<AtividadeDeParticipacaoEmProjeto> atividadesDeParticipacaoEmProjeto;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getCodigoInstituicao() {
 		return codigoInstituicao;

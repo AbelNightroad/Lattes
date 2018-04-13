@@ -15,7 +15,7 @@ import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
 @Entity
 @XStreamAlias("ARTIGO-ACEITO-PARA-PUBLICACAO")
-public class ArtigoAceitosPublicacao {
+public class ArtigoAceitoPublicacao {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -52,6 +52,14 @@ public class ArtigoAceitosPublicacao {
 	@Embedded
 	@XStreamAlias("INFORMACOES-ADICIONAIS")
 	private InformacoesAdicionais informacoesAdicionais;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getSequenciaProducao() {
 		return sequenciaProducao;

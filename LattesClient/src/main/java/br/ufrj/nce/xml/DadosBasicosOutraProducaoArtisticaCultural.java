@@ -1,11 +1,11 @@
 package br.ufrj.nce.xml;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.Embeddable;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
-@Embedded
+@Embeddable
 @XStreamAlias("DADOS-BASICOS-DE-OUTRA-PRODUCAO-ARTISTICA-CULTURAL")
 public class DadosBasicosOutraProducaoArtisticaCultural {
 

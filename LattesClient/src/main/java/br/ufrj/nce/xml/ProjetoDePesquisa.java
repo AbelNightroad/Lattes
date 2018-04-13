@@ -3,12 +3,23 @@ package br.ufrj.nce.xml;
 import java.time.LocalDate;
 import java.util.List;
 
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Entity
 @XStreamAlias("PROJETO-DE-PESQUISA")
 public class ProjetoDePesquisa {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
 	@XStreamAlias("SEQUENCIA-PROJETO")
 	@XStreamAsAttribute
 	private String sequenciaProjeto;
@@ -87,23 +98,35 @@ public class ProjetoDePesquisa {
 	
 	@XStreamAlias("DATA-CERTIFICAO")
 	@XStreamAsAttribute
-	private LocalDate dataCertificacao;
+	private String dataCertificacao;
 	
 	@XStreamAlias("NUMERO_TECNICO_NIVEL_MEDIO")
 	@XStreamAsAttribute
 	private String numeroTecnicoNivelMedio;
 	
+	@ElementCollection
 	@XStreamAlias("EQUIPE-DO-PROJETO")
 	private List<IntegranteDoProjeto> integrantesDoProjeto;
 
+	@ElementCollection
 	@XStreamAlias("FINANCIADORES-DO-PROJETO")
 	private List<FinanciadorDoProjeto> financiadoresDoProjeto;
 
+	@ElementCollection
 	@XStreamAlias("PRODUCOES-CT-DO-PROJETO")
 	private List<ProducaoCtDoProjeto> producoesCtDoProjeto;
 
+	@ElementCollection
 	@XStreamAlias("ORIENTACOES")
 	private List<Orientacao> orientacoes;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getSequenciaProjeto() {
 		return sequenciaProjeto;
@@ -257,11 +280,11 @@ public class ProjetoDePesquisa {
 		this.formatoDataCertificacao = formatoDataCertificacao;
 	}
 
-	public LocalDate getDataCertificacao() {
+	public String getDataCertificacao() {
 		return dataCertificacao;
 	}
 
-	public void setDataCertificacao(LocalDate dataCertificacao) {
+	public void setDataCertificacao(String dataCertificacao) {
 		this.dataCertificacao = dataCertificacao;
 	}
 

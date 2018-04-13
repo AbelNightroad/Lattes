@@ -32,6 +32,14 @@ public class DemaisTiposProducaoBibliografica {
 	@XStreamAlias("TRADUCAO")
 	private Traducao traducao;
 
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public OutraProducaoBibliografica getOutraProducaoBibliografica() {
 		return outraProducaoBibliografica;
 	}

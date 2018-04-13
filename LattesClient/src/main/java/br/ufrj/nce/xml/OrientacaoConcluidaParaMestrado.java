@@ -1,14 +1,22 @@
 package br.ufrj.nce.xml;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
-@Embedded
-@XStreamAlias("ORIENTACAO-CONCLUIDA-PARA-MESTRADO")
+@Entity
+@XStreamAlias("ORIENTACOES-CONCLUIDAS-PARA-MESTRADO")
 public class OrientacaoConcluidaParaMestrado {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
 	@XStreamAlias("SEQUENCIA-PRODUCAO")
 	@XStreamAsAttribute
 	private String sequenciaProducao;
@@ -36,6 +44,14 @@ public class OrientacaoConcluidaParaMestrado {
 	@Embedded
 	@XStreamAlias("INFORMACOES-ADICIONAIS")
 	private InformacoesAdicionais informacoesAdicionais;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getSequenciaProducao() {
 		return sequenciaProducao;

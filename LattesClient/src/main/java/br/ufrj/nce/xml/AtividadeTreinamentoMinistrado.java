@@ -64,6 +64,14 @@ public class AtividadeTreinamentoMinistrado {
 	@XStreamImplicit(itemFieldName = "TREINAMENTO")
 	private List<Treinamento> treinamentos;
 	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public String getSequenciaFuncaoAtividade() {
 		return sequenciaFuncaoAtividade;
 	}

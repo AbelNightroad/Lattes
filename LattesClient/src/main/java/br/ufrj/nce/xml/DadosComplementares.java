@@ -2,16 +2,19 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.CascadeType;
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+import javax.persistence.OneToMany;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Embeddable
 @XStreamAlias("DADOS-COMPLEMENTARES")
 public class DadosComplementares {
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "FORMACAO-COMPLEMENTAR")
 	private List<FormacaoComplementar> formacaoComplementar;
 

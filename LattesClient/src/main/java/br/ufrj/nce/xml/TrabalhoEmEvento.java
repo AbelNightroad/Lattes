@@ -25,11 +25,11 @@ public class TrabalhoEmEvento {
 	@XStreamAsAttribute
 	private String sequenciaProducao;
 
-
+	@Embedded
 	@XStreamAlias("DADOS-BASICOS-DO-TRABALHO")
 	private DadosBasicosDoTrabalho dadosBasicosDoTrabalho;
 
-
+	@Embedded
 	@XStreamAlias("DETALHAMENTO-DO-TRABALHO")
 	private DetalhamentoDoTrabalho detalhamentoDoTrabalho;
 
@@ -52,6 +52,14 @@ public class TrabalhoEmEvento {
 	@Embedded
 	@XStreamAlias("INFORMACOES-ADICIONAIS")
 	private InformacoesAdicionais informacoesAdicionais;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getSequenciaProducao() {
 		return sequenciaProducao;

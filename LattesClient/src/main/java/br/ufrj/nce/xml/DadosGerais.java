@@ -2,6 +2,7 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.ElementCollection;
 import javax.persistence.Embeddable;
 import javax.persistence.Embedded;
@@ -134,7 +135,7 @@ public class DadosGerais {
 	@XStreamAlias("FORMACAO-ACADEMICA-TITULACAO")
 	private FormacaoAcademicaTitulacao formacaoAcademicaTitulacao;
 
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamAlias("ATUACOES-PROFISSIONAIS")
 	private List<AtuacaoProfissional> atuacoesProfissionais;
 

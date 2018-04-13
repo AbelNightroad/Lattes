@@ -2,10 +2,12 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
@@ -59,8 +61,17 @@ public class AtividadeDeParticipacaoEmProjeto {
 	@XStreamAsAttribute
 	private String nomeUnidade;
 
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "PROJETO-DE-PESQUISA")
 	private List<ProjetoDePesquisa> projetosDePesquisa;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getSequenciaFuncaoAtividade() {
 		return sequenciaFuncaoAtividade;

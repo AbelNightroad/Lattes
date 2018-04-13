@@ -2,30 +2,47 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Entity
 @XStreamAlias("ORIENTACOES-CONCLUIDAS")
 public class OrientacoesConcluidas {
 
-	@Embedded
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "ORIENTACOES-CONCLUIDAS-PARA-MESTRADO")
 	private List<OrientacaoConcluidaParaMestrado> orientacoesConcluidasParaMestrado;
 
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "ORIENTACOES-CONCLUIDAS-PARA-DOUTORADO")
 	private List<OrientacaoConcluidaParaDoutorado> orientacoesConcluidasParaDoutorado;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "ORIENTACOES-CONCLUIDAS-PARA-POS-DOUTORADO")
 	private List<OrientacaoConcluidaParaPosDoutorado> orientacoesConcluidasParaPosDoutorado;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "OUTRAS-ORIENTACOES-CONCLUIDAS")
 	private List<OutraOrientacaoConcluida> outrasOrientacoesConcluidas;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public List<OrientacaoConcluidaParaMestrado> getOrientacoesConcluidasParaMestrado() {
 		return orientacoesConcluidasParaMestrado;

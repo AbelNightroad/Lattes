@@ -65,6 +65,14 @@ public class AtividadeDePesquisaEDesenvolvimento {
 	@XStreamImplicit(itemFieldName = "LINHA-DE-PESQUISA")
 	private List<LinhaDePesquisa> linhasDePesquisa;
 
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public String getSequenciaFuncaoAtividade() {
 		return sequenciaFuncaoAtividade;
 	}

@@ -1,8 +1,11 @@
 package br.ufrj.nce.xml;
 
+import javax.persistence.Embeddable;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
+@Embeddable
 @XStreamAlias("PRODUCAO-CT-DO-PROJETO")
 public class ProducaoCtDoProjeto {
 

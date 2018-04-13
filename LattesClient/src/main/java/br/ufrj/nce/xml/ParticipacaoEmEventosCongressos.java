@@ -2,48 +2,50 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.CascadeType;
+import javax.persistence.Embeddable;
+import javax.persistence.OneToMany;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Embeddable
 @XStreamAlias("PARTICIPACAO-EM-EVENTOS-CONGRESSOS")
 public class ParticipacaoEmEventosCongressos {
 
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-CONGRESSO")
 	private List<ParticipacaoEmCongresso> participacaoEmCongresso;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-FEIRA")
 	private List<ParticipacaoEmFeira> participacaoEmFeira;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-SEMINARIO")
 	private List<ParticipacaoEmSeminario> participacaoEmSeminario;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-SIMPOSIO")
 	private List<ParticipacaoEmSimposio> participacaoEmSimposio;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-OFICINA")
 	private List<ParticipacaoEmOficina> participacaoEmOficina;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-ENCONTRO")
 	private List<ParticipacaoEmEncontro> participacaoEmEncontro;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-EXPOSICAO")
 	private List<ParticipacaoEmExposicao> participacaoEmExposicao;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-OLIMPIADA")
 	private List<ParticipacaoEmOlimpiada> participacaoEmOlimpiada;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "OUTRAS-PARTICIPACOES-EM-EVENTOS-CONGRESSOS")
 	private List<OutrasParticipacoesEmEventosCongressos> outrasParticipacoesEmEventosCongressos;
 

@@ -72,6 +72,14 @@ public class AtividadeDeEnsino {
 	@XStreamImplicit(itemFieldName = "DISCIPLINA")
 	private List<Disciplina> disciplinas;
 
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public String getSequenciaFuncaoAtividade() {
 		return sequenciaFuncaoAtividade;
 	}

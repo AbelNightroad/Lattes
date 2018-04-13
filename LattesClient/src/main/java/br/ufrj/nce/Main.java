@@ -9,6 +9,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.transaction.Status;
 import javax.transaction.TransactionManager;
 
 import org.mongodb.morphia.Key;
@@ -22,7 +23,9 @@ import br.ufrj.nce.xml.Curriculo;
 public class Main {
 
 	public static void main(String[] args) {
-		CurriculoDAO dao = new CurriculoDAO("testeMongo");
+		//CurriculoDAO dao = new CurriculoDAO("testeMongo");
+		TransactionManager tm = com.arjuna.ats.jta.TransactionManager.transactionManager();
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("LattesClient");
 		
 		FileUtil util = new FileUtil();
 		List<String> listaXML = util.listFiles("./bin/files");
@@ -30,10 +33,9 @@ public class Main {
 		Main m = new Main();
 		ClassLoader cl = Main.class.getClassLoader();
 		
-		TransactionManager tm = com.arjuna.ats.jta.TransactionManager.transactionManager();
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("LattesClient");
 		
 		for (String nome : listaXML) {
+			
 			InputStream input = cl.getResourceAsStream("files/" + nome);
 			
 			Curriculo curriculo = XmlUtil.fromXML(m.readFromInputStream(input));
@@ -45,10 +47,20 @@ public class Main {
 			System.out.println();
 			
 			try {
+				int tmStatus = tm.getStatus();
+				
+				if (tmStatus == Status.STATUS_MARKED_ROLLBACK || tmStatus == Status.STATUS_ROLLEDBACK) tm.rollback();
+				
 				tm.begin();
 				EntityManager em = emf.createEntityManager();
-				em.persist(curriculo);
 				
+				em.persist(curriculo);
+				System.out.println(curriculo.getId());
+				
+				em.flush();
+				em.close();
+				
+				tm.commit();
 				
 			}catch (Exception e) {
 				e.printStackTrace();
@@ -68,6 +80,10 @@ public class Main {
 //		
 //		query = dao.createQuery();
 //		query.asList().stream().map(Curriculo::getDadosGerais).forEach(i -> System.out.println(i.getNomeCompleto()));
+		
+	}
+	
+	private void salvar(Curriculo curriculo) {
 		
 	}
 	

@@ -2,6 +2,7 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Embeddable;
 import javax.persistence.OneToMany;
 
@@ -12,15 +13,15 @@ import com.thoughtworks.xstream.annotations.XStreamImplicit;
 @XStreamAlias("OUTRA-PRODUCAO")
 public class OutraProducao {
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "PRODUCAO-ARTISTICA-CULTURAL")
 	private List<ProducaoArtisticaCultural> producaoArtisticaCultural;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "ORIENTACOES-CONCLUIDAS")
 	private List<OrientacoesConcluidas> orientacoesConcluidas;
 
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "DEMAIS-TRABALHOS")
 	private List<DemaisTrabalhos> demaisTrabalhos;
 

@@ -2,6 +2,7 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Embeddable;
 import javax.persistence.OneToMany;
 
@@ -12,7 +13,7 @@ import com.thoughtworks.xstream.annotations.XStreamImplicit;
 @XStreamAlias("CAPITULOS-DE-LIVROS-PUBLICADOS")
 public class CapitulosDeLivrosPublicados {
 
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "CAPITULO-DE-LIVRO-PUBLICADO")
 	private List<CapituloDeLivroPublicado> capituloDeLivroPublicado;
 

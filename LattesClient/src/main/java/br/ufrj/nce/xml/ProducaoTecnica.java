@@ -2,6 +2,7 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Embeddable;
 import javax.persistence.Embedded;
 import javax.persistence.OneToMany;
@@ -13,43 +14,43 @@ import com.thoughtworks.xstream.annotations.XStreamImplicit;
 @XStreamAlias("PRODUCAO-TECNICA")
 public class ProducaoTecnica {
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "CULTIVAR-REGISTRADA")
 	private List<CultivarRegistrada> cultivarRegistradas;
 
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "SOFTWARE")
 	private List<Software> softwares;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "PATENTE")
 	private List<Patente> patentes;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "CULTIVAR-PROTEGIDA")
 	private List<CultivarProtegida> cultivarProtegidas;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "DESENHO-INDUSTRIAL")
 	private List<DesenhoIndustrial> desenhosIndustriais;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "MARCA")
 	private List<Marca> marcas;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "TOPOGRAFIA-DE-CIRCUITO-INTEGRADO")
 	private List<TopografiaCircuitoIntegrado> topografiasCircuitoIntegrado;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "PRODUTO-TECNOLOGICO")
 	private List<ProdutoTecnologico> produtosTecnologicos;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "PROCESSOS-OU-TECNICAS")
 	private List<ProcessosOuTecnicas> processosOuTecnicas;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "TRABALHO-TECNICO")
 	private List<TrabalhoTecnico> trabalhosTecnicos;
 	

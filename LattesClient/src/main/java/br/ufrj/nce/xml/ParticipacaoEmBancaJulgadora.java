@@ -2,32 +2,34 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
-import org.mongodb.morphia.annotations.Embedded;
+import javax.persistence.CascadeType;
+import javax.persistence.Embeddable;
+import javax.persistence.OneToMany;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@Embedded
+@Embeddable
 @XStreamAlias("PARTICIPACAO-EM-BANCA-JULGADORA")
 public class ParticipacaoEmBancaJulgadora {
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "BANCA-JULGADORA-PARA-PROFESSOR-TITULAR")
 	private List<BancaJulgadoraProfessorTitular> bancaJulgadoraProfessorTitular;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "BANCA-JULGADORA-PARA-CONCURSO-PUBLICO")
 	private List<BancaJulgadoraParaConcursoPublico> bancaBancaJulgadoraParaConcursoPublico;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "BANCA-JULGADORA-PARA-LIVRE-DOCENCIA")
 	private List<BancaJulgadoraLivreDocencia> bancaJulgadoraLivreDocencia;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "BANCA-JULGADORA-PARA-AVALIACAO-CURSOS")
 	private List<BancaJulgadoraAvaliacaoCursos> bancaJulgadoraAvaliacaoCursos;
 	
-	@Embedded
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "OUTRAS-BANCAS-JULGADORAS")
 	private List<OutrasBancasJulgadoras> outrasBancasJulgadoras;
 

@@ -2,6 +2,7 @@ package br.ufrj.nce.xml;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,49 +20,57 @@ public class ProducaoArtisticaCultural {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "APRESENTACAO-DE-OBRA-ARTISTICA")
 	private List<ApresentacaoObraArtistica> apresentacoesObraArtistica;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "APRESENTACAO-EM-RADIO-OU-TV")
 	private List<ApresentacaoRadioTv> apresentacoesRadioTv;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "ARRANJO-MUSICAL")
 	private List<ArranjoMusical> arranjosMusicais;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "COMPOSICAO-MUSICAL")
 	private List<ComposicaoMusical> composicoesMusicais;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "CURSO-DE-CURTA-DURACAO")
 	private List<CursoCurtaDuracao> cursosCurtaDuracao;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "OBRA-DE-ARTES-VISUAIS")
 	private List<ObraArtesVisuais> obrasArtesVisuais;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "OUTRA-PRODUCAO-ARTISTICA-CULTURAL")
 	private List<OutraProducaoArtisticaCultural> outrasProducoesArtisticasCulturais;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "SONOPLASTIA")
 	private List<Sonoplastia> sonoplastias;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "ARTES-CENICAS")
 	private List<ArtesCenicas> artesCenicas;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "ARTE-VISUAIS")
 	private List<ArtesVisuais> artesVisuais;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.PERSIST)
 	@XStreamImplicit(itemFieldName = "MUSICAS")
 	private List<Musica> musicas;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public List<ApresentacaoObraArtistica> getApresentacoesObraArtistica() {
 		return apresentacoesObraArtistica;

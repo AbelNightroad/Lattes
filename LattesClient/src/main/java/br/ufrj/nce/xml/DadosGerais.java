@@ -135,7 +135,7 @@ public class DadosGerais {
 	@XStreamAlias("FORMACAO-ACADEMICA-TITULACAO")
 	private FormacaoAcademicaTitulacao formacaoAcademicaTitulacao;
 
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamAlias("ATUACOES-PROFISSIONAIS")
 	private List<AtuacaoProfissional> atuacoesProfissionais;
 

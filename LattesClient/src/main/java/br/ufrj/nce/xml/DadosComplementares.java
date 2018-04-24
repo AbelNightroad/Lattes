@@ -14,7 +14,7 @@ import com.thoughtworks.xstream.annotations.XStreamImplicit;
 @XStreamAlias("DADOS-COMPLEMENTARES")
 public class DadosComplementares {
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "FORMACAO-COMPLEMENTAR")
 	private List<FormacaoComplementar> formacaoComplementar;
 

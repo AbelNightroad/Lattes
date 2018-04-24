@@ -1,10 +1,11 @@
 package br.ufrj.nce.xml;
 
-import javax.persistence.Embedded;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
@@ -16,11 +17,11 @@ public class LivrosECapitulos {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	@Embedded
+	@OneToOne(cascade = CascadeType.ALL)
 	@XStreamAlias("LIVROS-PUBLICADOS-OU-ORGANIZADOS")
 	private LivrosPublicadosOuOrganizados livrosPublicadosOuOrganizados;
 	
-	@Embedded
+	@OneToOne(cascade = CascadeType.ALL)
 	@XStreamAlias("CAPITULOS-DE-LIVROS-PUBLICADOS")
 	private CapitulosDeLivrosPublicados capitulosDeLivrosPublicados;
 

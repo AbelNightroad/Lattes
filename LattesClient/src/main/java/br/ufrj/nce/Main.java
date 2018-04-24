@@ -29,46 +29,72 @@ public class Main {
 		
 		FileUtil util = new FileUtil();
 		List<String> listaXML = util.listFiles("./bin/files");
-
+		String nome = "files/" + listaXML.get(2);
+		
 		Main m = new Main();
 		ClassLoader cl = Main.class.getClassLoader();
-		
-		
-		for (String nome : listaXML) {
-			
-			InputStream input = cl.getResourceAsStream("files/" + nome);
-			
-			Curriculo curriculo = XmlUtil.fromXML(m.readFromInputStream(input));
 
-			System.out.println(curriculo.getNumeroIdentificador());
-			System.out.println(curriculo.getHoraAtualizacao());
-			System.out.println(curriculo.getOrigemXml());
-			System.out.println(curriculo.getDadosGerais().getNomeCompleto());
-			System.out.println();
+		InputStream input = cl.getResourceAsStream(nome);
+		
+		Curriculo c = XmlUtil.fromXML(m.readFromInputStream(input));
+		System.out.println(c.getNumeroIdentificador());
+		System.out.println(c.getHoraAtualizacao());
+		System.out.println(c.getOrigemXml());
+		System.out.println(c.getDadosGerais().getNomeCompleto());
+		System.out.println();
+		
+		try {
+			tm.begin();
+			EntityManager em = emf.createEntityManager();
+			em.persist(c);
 			
-			try {
-				int tmStatus = tm.getStatus();
-				
-				if (tmStatus == Status.STATUS_MARKED_ROLLBACK || tmStatus == Status.STATUS_ROLLEDBACK) tm.rollback();
-				
-				tm.begin();
-				EntityManager em = emf.createEntityManager();
-				
-				em.persist(curriculo);
-				System.out.println(curriculo.getId());
-				
-				em.flush();
-				em.close();
-				
-				tm.commit();
-				
-			}catch (Exception e) {
-				e.printStackTrace();
-			}
-//			Key<Curriculo> key = dao.save(curriculo);
-//			System.out.println(key);
-//			System.out.println();
+			System.out.println(c.getId());
+			
+			em.flush();
+			em.close();
+			
+			tm.commit();
+		}catch (Exception e) {
+			e.printStackTrace();
 		}
+		
+		
+		
+//		for (String nome : listaXML) {
+//			
+//			InputStream input = cl.getResourceAsStream("files/" + nome);
+//			
+//			Curriculo curriculo = XmlUtil.fromXML(m.readFromInputStream(input));
+//
+//			System.out.println(curriculo.getNumeroIdentificador());
+//			System.out.println(curriculo.getHoraAtualizacao());
+//			System.out.println(curriculo.getOrigemXml());
+//			System.out.println(curriculo.getDadosGerais().getNomeCompleto());
+//			System.out.println();
+//			
+//			try {
+//				int tmStatus = tm.getStatus();
+//				
+//				if (tmStatus == Status.STATUS_MARKED_ROLLBACK || tmStatus == Status.STATUS_ROLLEDBACK) tm.rollback();
+//				
+//				tm.begin();
+//				EntityManager em = emf.createEntityManager();
+//				
+//				em.persist(curriculo);
+//				System.out.println(curriculo.getId());
+//				
+//				em.flush();
+//				em.close();
+//				
+//				tm.commit();
+//				
+//			}catch (Exception e) {
+//				e.printStackTrace();
+//			}
+////			Key<Curriculo> key = dao.save(curriculo);
+////			System.out.println(key);
+////			System.out.println();
+//		}
 		
 
 //		Query<Curriculo> query = dao.createQuery();

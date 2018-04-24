@@ -61,7 +61,7 @@ public class AtividadeDeParticipacaoEmProjeto {
 	@XStreamAsAttribute
 	private String nomeUnidade;
 
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "PROJETO-DE-PESQUISA")
 	private List<ProjetoDePesquisa> projetosDePesquisa;
 

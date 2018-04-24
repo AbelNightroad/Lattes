@@ -47,11 +47,11 @@ public class AtuacaoProfissional {
 	@XStreamAlias("ATIVIDADES-DE-DIRECAO-E-ADMINISTRACAO")
 	private List<AtividadeDeDirecaoEAdministracao> atividadesDeDirecaoEAdministracao;;
 
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamAlias("ATIVIDADES-DE-PESQUISA-E-DESENVOLVIMENTO")
 	private List<AtividadeDePesquisaEDesenvolvimento> atividadesDePesquisaEDesenvolvimento;
 
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamAlias("ATIVIDADES-DE-ENSINO")
 	private List<AtividadeDeEnsino> atividadesDeEnsino;
 	
@@ -67,7 +67,7 @@ public class AtuacaoProfissional {
 	@XStreamAlias("ATIVIDADES-DE-EXTENSAO-UNIVERSITARIA")
 	private List<AtividadeExtensaoUniversitaria> atividadesExtensaoUniversitaria;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamAlias("ATIVIDADES-DE-TREINAMENTO-MINISTRADO")
 	private List<AtividadeTreinamentoMinistrado> atividadesTreinamentoMinistrado;
 	
@@ -79,7 +79,7 @@ public class AtuacaoProfissional {
 	@XStreamAlias("ATIVIDADES-DE-CONSELHO-COMISSAO-E-CONSULTORIA")
 	private List<AtividadeConselhoComissaoConsultoria> atividadesConselhoComissaoConsultoria;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamAlias("ATIVIDADES-DE-PARTICIPACAO-EM-PROJETO")
 	private List<AtividadeDeParticipacaoEmProjeto> atividadesDeParticipacaoEmProjeto;
 

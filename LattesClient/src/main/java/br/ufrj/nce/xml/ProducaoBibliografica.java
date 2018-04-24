@@ -12,27 +12,27 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 @XStreamAlias("PRODUCAO-BIBLIOGRAFICA")
 public class ProducaoBibliografica {
 
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamAlias("TRABALHOS-EM-EVENTOS")
 	private List<TrabalhoEmEvento> trabalhosEmEventos;
 
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamAlias("ARTIGOS-PUBLICADOS")
 	private List<ArtigoPublicado> artigosPublicados;
 
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamAlias("LIVROS-E-CAPITULOS")
 	private List<LivrosECapitulos> livrosECapitulos;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamAlias("TEXTOS-EM-JORNAIS-OU-REVISTAS")
 	private List<TextoJornaisRevistas> textojornaisRevistas;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamAlias("DEMAIS-TIPOS-DE-PRODUCAO-BIBLIOGRAFICA")
 	private List<DemaisTiposProducaoBibliografica> demaisTiposProducaoBibliograficas;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamAlias("ARTIGOS-ACEITOS-PARA-PUBLICACAO")
 	private List<ArtigoAceitoPublicacao> artigosAceitosPublicacaos;
 

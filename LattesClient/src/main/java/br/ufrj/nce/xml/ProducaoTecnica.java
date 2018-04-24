@@ -14,43 +14,43 @@ import com.thoughtworks.xstream.annotations.XStreamImplicit;
 @XStreamAlias("PRODUCAO-TECNICA")
 public class ProducaoTecnica {
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "CULTIVAR-REGISTRADA")
 	private List<CultivarRegistrada> cultivarRegistradas;
 
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "SOFTWARE")
 	private List<Software> softwares;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "PATENTE")
 	private List<Patente> patentes;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "CULTIVAR-PROTEGIDA")
 	private List<CultivarProtegida> cultivarProtegidas;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "DESENHO-INDUSTRIAL")
 	private List<DesenhoIndustrial> desenhosIndustriais;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "MARCA")
 	private List<Marca> marcas;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "TOPOGRAFIA-DE-CIRCUITO-INTEGRADO")
 	private List<TopografiaCircuitoIntegrado> topografiasCircuitoIntegrado;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "PRODUTO-TECNOLOGICO")
 	private List<ProdutoTecnologico> produtosTecnologicos;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "PROCESSOS-OU-TECNICAS")
 	private List<ProcessosOuTecnicas> processosOuTecnicas;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "TRABALHO-TECNICO")
 	private List<TrabalhoTecnico> trabalhosTecnicos;
 	

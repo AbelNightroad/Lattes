@@ -1,10 +1,12 @@
 package br.ufrj.nce.xml;
 
-import javax.persistence.Embedded;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
@@ -16,19 +18,19 @@ public class DemaisTiposProducaoBibliografica {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	@Embedded
+	@OneToOne(cascade = CascadeType.ALL)
 	@XStreamAlias("OUTRA-PRODUCAO-BIBLIOGRAFICA")
 	private OutraProducaoBibliografica outraProducaoBibliografica;
 	
-	@Embedded
+	@OneToOne(cascade = CascadeType.ALL)
 	@XStreamAlias("PARTITURA-MUSICAL")
 	private PartituraMusical partituraMusical;
 	
-	@Embedded
+	@OneToOne(cascade = CascadeType.ALL)
 	@XStreamAlias("PREFACIO-POSFACIO")
 	private PrefacioPosfacio prefacioPosfacio;
 	
-	@Embedded
+	@OneToOne(cascade = CascadeType.ALL)
 	@XStreamAlias("TRADUCAO")
 	private Traducao traducao;
 

@@ -13,51 +13,51 @@ import com.thoughtworks.xstream.annotations.XStreamImplicit;
 @XStreamAlias("DEMAIS-TIPOS-DE-PRODUCAO-TECNICA")
 public class DemaisTiposDeProducaoTecnica {
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "APRESENTACAO-DE-TRABALHO")
 	private List<ApresentacaoTrabalho> apresentacaoTrabalho;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "CARTA-MAPA-OU-SIMILAR")
 	private List<CartaMapaSimilar> cartaMapaSimilar;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "CURSO-DE-CURTA-DURACAO-MINISTRADO")
 	private List<CursoCurtaDuracaoMinistrado> cursoCurtaDuracaoMinistrado;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "DESENVOLVIMENTO-DE-MATERIAL-DIDATICO-OU-INSTRUCIONAL")
 	private List<DesenvolvimentoDeMaterialDidaticoOuIntrucional> desenvolvimentoDeMateriaisDidaticoOuIntrucional;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "EDITORACAO")
 	private List<Editoracao> editoracao;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "MANUTENCAO-DE-OBRA-ARTISTICA")
 	private List<ManutencaoObraArtistica> manutencaoObraArtistica;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "MAQUETE")
 	private List<Maquete> maquete;
 
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "ORGANIZACAO-DE-EVENTO")
 	private List<OrganizacaoDeEvento> organizacaoDeEventos;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "PROGRAMA-DE-RADIO-TV")
 	private List<ProgramaRadioTv> programaRadioTv;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "RELATORIO-DE-PESQUISA")
 	private List<RelatorioPesquisa> relatorioPesquisa;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "MIDIA-SOCIAL-WEBSITE-BLOG")
 	private List<MidiaSocialWebsiteBlog> MidiSocialWebsiteBlog;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "OUTRA-PRODUCAO-TECNICA")
 	private List<OutraProducaoTecnica> outraProducaoTecnica;
 

@@ -13,39 +13,39 @@ import com.thoughtworks.xstream.annotations.XStreamImplicit;
 @XStreamAlias("PARTICIPACAO-EM-EVENTOS-CONGRESSOS")
 public class ParticipacaoEmEventosCongressos {
 
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-CONGRESSO")
 	private List<ParticipacaoEmCongresso> participacaoEmCongresso;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-FEIRA")
 	private List<ParticipacaoEmFeira> participacaoEmFeira;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-SEMINARIO")
 	private List<ParticipacaoEmSeminario> participacaoEmSeminario;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-SIMPOSIO")
 	private List<ParticipacaoEmSimposio> participacaoEmSimposio;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-OFICINA")
 	private List<ParticipacaoEmOficina> participacaoEmOficina;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-ENCONTRO")
 	private List<ParticipacaoEmEncontro> participacaoEmEncontro;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-EXPOSICAO")
 	private List<ParticipacaoEmExposicao> participacaoEmExposicao;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "PARTICIPACAO-EM-OLIMPIADA")
 	private List<ParticipacaoEmOlimpiada> participacaoEmOlimpiada;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@XStreamImplicit(itemFieldName = "OUTRAS-PARTICIPACOES-EM-EVENTOS-CONGRESSOS")
 	private List<OutrasParticipacoesEmEventosCongressos> outrasParticipacoesEmEventosCongressos;
 
